@@ -510,6 +510,7 @@ function displayProduct(product, content, rows_per_page, page) {
         //div2
         // div2 = document.createElement("div");
 
+        //sliding image
         let counter = 0;
 
         slideShow();
@@ -594,7 +595,7 @@ function displayProduct(product, content, rows_per_page, page) {
     })
 }
 
-
+//pagination 
 function setupPagination(product, wrapper, rows_per_page) {
     wrapper.innerHTML = "";
     let page_count = Math.ceil(product.length / rows_per_page);
@@ -617,7 +618,7 @@ function paginationButton(page, product) {
 
     return button;
 }
-
+//pagination setup
 setupPagination(product, pagination_element, rows);
 
 let moments = document.querySelector("#moments");
