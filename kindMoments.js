@@ -320,8 +320,8 @@ function displayProduct(product, content, rows_per_page, page) {
         let card = document.createElement("div");
         let box = document.createElement("div");
         box.style.cursor = "pointer";
-        box.addEventListener("click",function(){
-            window.location.href="shop.html"
+        box.addEventListener("click", function () {
+            window.location.href = "shop.html"
         })
         // div1
         div1 = document.createElement("div");
@@ -343,6 +343,7 @@ function displayProduct(product, content, rows_per_page, page) {
         })
         let date = document.createElement("p")
         date.innerText = ele.date;
+        date.classList.add("date")
         hbody.append(name, date)
 
         let btn = document.createElement("button");
@@ -384,6 +385,7 @@ function displayProduct(product, content, rows_per_page, page) {
         //div4
         div4 = document.createElement("div");
         let para = document.createElement("p");
+
         para.innerText = ele.des;
 
         div4.append(para)
@@ -394,17 +396,18 @@ function displayProduct(product, content, rows_per_page, page) {
 
         let socialimg = document.createElement("img");
         socialimg.src = ele.socialLogo;
-        socialimg.style.cursor="pointer";
-        socialimg.addEventListener("click",function(){
-            window.location.href="https://www.facebook.com/"
+        socialimg.style.cursor = "pointer";
+        socialimg.addEventListener("click", function () {
+            window.location.href = "https://www.facebook.com/"
         })
 
         //inner div
         divinner = document.createElement("div");
         let p1 = document.createElement("p");
-        p1.style.cursor="pointer";
-        p1.addEventListener("click",function(){
-            window.location.href="https://www.facebook.com/"
+        p1.style.cursor = "pointer";
+        p1.classList.add("p1")
+        p1.addEventListener("click", function () {
+            window.location.href = "https://www.facebook.com/"
         })
         let p2 = document.createElement("p");
 
@@ -461,3 +464,23 @@ function paginationButton(page, product) {
 }
 
 setupPagination(product, pagination_element, rows);
+
+let moments = document.querySelector("#moments");
+moments.addEventListener("click", function () {
+    window.location.reload()
+    displayProduct(product)
+
+})
+let deal = document.querySelector("#deal");
+
+deal.addEventListener("click", function () {
+    deal.classList.add("active")
+    moments.classList.remove("active")
+    let filtered = [];
+    for (let i = product.length - 1; i >= 0; i--) {
+        filtered.push(product[i]);
+    }
+
+    displayProduct(filtered, content, rows, current_page)
+
+})

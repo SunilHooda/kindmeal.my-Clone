@@ -19,10 +19,10 @@
   justify-content: space-between;
   padding: 20px 0px;
 }
-#container > div:first-child>p+h3{
+#container > div:first-child > p + h3 {
   color: #888888;
 }
-#container > div:first-child>h3{
+#container > div:first-child > h3 {
   letter-spacing: 1px;
 }
 #container > div:nth-child(2) {
@@ -46,15 +46,15 @@
   flex-direction: column;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-#container > div:last-child >button{
-background-color: red;
-color: white;
-font-weight: bold;
-font-size: 16px;
-border: none;
-padding: 10px 70px;
-border-radius: 5px;
-margin-bottom: 10px;
+#container > div:last-child > button {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  padding: 10px 70px;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 #container > div:last-child > h3 + p {
   padding: 10px;
@@ -62,9 +62,9 @@ margin-bottom: 10px;
   text-align: center;
   margin: auto;
 }
-#container > div:last-child > h3  {
+#container > div:last-child > h3 {
   font-weight: 400;
- color: #444444;
+  color: #444444;
 }
 .btn-red {
   margin: 10px;
@@ -77,7 +77,6 @@ margin-bottom: 10px;
   border-radius: 10px;
 }
 .btn-grey {
-  font-weight: 100;
   margin: 10px;
   padding: 10px 40px;
   background-color: hsl(0, 0%, 97%);
@@ -87,9 +86,11 @@ margin-bottom: 10px;
   font-size: 16px;
   font-weight: bold;
   border-radius: 10px;
+  font-weight: 20;
 }
 .active {
   background-color: #2bb673;
+  color: white;
 }
 #banner {
   font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -172,7 +173,7 @@ select {
   width: 10%;
 }
 #content > div > div:nth-child(4) {
-  padding-left: 20px;
+  padding: 20px;
   font-size: 15px;
 }
 #content > div > div:nth-child(5) {
@@ -243,6 +244,17 @@ select {
   bottom: 500px;
   margin: 10px;
 }
-.name{
+.name {
   cursor: pointer;
+}
+.name:hover{
+  text-decoration: underline;
+}
+.p1:hover{
+  text-decoration: underline;
+}
+.date{
+  padding: 5px 0px;
+  font-size: 12px;
+  color: #aaaaaa;
 }
