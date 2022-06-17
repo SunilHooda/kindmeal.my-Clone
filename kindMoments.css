@@ -53,7 +53,7 @@
   font-size: 16px;
   border: none;
   padding: 10px 70px;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-bottom: 10px;
 }
 #container > div:last-child > h3 + p {
@@ -257,4 +257,8 @@ select {
   padding: 5px 0px;
   font-size: 12px;
   color: #aaaaaa;
+}
+
+.view:hover{
+  background-color: #44aaee;
 }

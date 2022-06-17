@@ -348,6 +348,7 @@ function displayProduct(product, content, rows_per_page, page) {
 
         let btn = document.createElement("button");
         btn.innerText = "View"
+        btn.classList.add("view")
         btn.addEventListener("click", function () {
             window.location.href = "profile.html"
         })
@@ -410,6 +411,7 @@ function displayProduct(product, content, rows_per_page, page) {
             window.location.href = "https://www.facebook.com/"
         })
         let p2 = document.createElement("p");
+        p2.classList.add("date")
 
         if (ele.address !== undefined && ele.link !== undefined) {
             p1.innerText = ele.link;
