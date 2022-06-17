@@ -258,7 +258,9 @@ select {
   font-size: 12px;
   color: #aaaaaa;
 }
-
+.view{
+  font-weight: bold;
+}
 .view:hover{
   background-color: #44aaee;
 }

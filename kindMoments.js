@@ -18,6 +18,25 @@ let product = [{
 
 },
 {
+    logo: "https://www.kindmeal.my/photos/member/12/12420-s.jpg",
+    name: "MeiMei",
+    date: "Jun 17th 2022",
+    image: ["https://www.kindmeal.my/photos/moment/24/24057-45887-m.jpg",
+
+        "https://www.kindmeal.my/photos/moment/24/24057-45887-m.jpg",
+        "https://www.kindmeal.my/photos/moment/24/24057-45887-m.jpg"
+
+    ],
+    socialLogo: "https://www.kindmeal.my/images/icon_facebook_moment.png",
+    link: "Hijau",
+    address: "REX KL, 80, Jalan Sultan, City Centre, 50000 Kuala Lumpur, W..",
+    likeimg: "https://www.kindmeal.my/images/icon_heart_darkgrey.svg",
+    camara: "https://www.kindmeal.my/images/icon_camera_darkgrey.png",
+    msg: "https://www.kindmeal.my/images/icon_comment_darkgrey.png",
+    des: "来茨场街逛可以来REXKL里的 Hijau 找素食。菜单上全是vegan纯素(纯植物但不确定有没有葱蒜，可以当下问服务员.. see more",
+
+},
+{
     logo: "https://www.kindmeal.my/photos/member/11/11540-s.jpg",
     name: "ChewLengLeng",
     date: "Jun 15th 2022",
@@ -296,6 +315,140 @@ let product = [{
     likeimg: "https://www.kindmeal.my/images/icon_heart_darkgrey.svg",
     camara: "https://www.kindmeal.my/images/icon_camera_darkgrey.png",
     msg: "https://www.kindmeal.my/images/icon_comment_darkgrey.png"
+
+},
+{
+    logo: "https://www.kindmeal.my/photos/member/10/10038-s.jpg",
+    name: "PiggyLovesToEat",
+    date: "Jun 16th 2022",
+    image: ["https://www.kindmeal.my/photos/moment/24/24016-45752-m.jpg",
+        "https://www.kindmeal.my/photos/moment/24/24039-45827-m.jpg",
+        "https://www.kindmeal.my/photos/moment/24/24032-45800-m.jpg"
+    ],
+    socialLogo: "https://www.kindmeal.my/images/icon_facebook_moment.png",
+    des: "小炒RM6.00起 Loves Veggie 爱素食 Add : Lot 10215, Ground Floor, Ja.. see more",
+    link: "Creative Home-Style Dining",
+    address: "Red House 2 Cheras, Kuala Lumpur",
+    likeimg: "https://www.kindmeal.my/images/icon_heart_darkgrey.svg",
+    camara: "https://www.kindmeal.my/images/icon_camera_darkgrey.png",
+    msg: "https://www.kindmeal.my/images/icon_comment_darkgrey.png",
+    des:"Today I tried the Assam Laksa Mixian. Nice broth with a lot of pear, pineapple, and mints! No mock meat for this dish. Too bad the.. see more"
+
+},
+{
+    logo: "https://www.kindmeal.my/photos/member/22/22038-s.jpg",
+    name: "JasonFong",
+    date: "Jun 12th 2022",
+    image: ["https://www.kindmeal.my/photos/moment/24/24018-45760-m.jpg",
+        "https://www.kindmeal.my/photos/moment/24/24027-45794-m.jpg",
+        "https://www.kindmeal.my/photos/moment/24/24041-45833-m.jpg"
+    ],
+    socialLogo: "https://www.kindmeal.my/images/icon_facebook_moment.png",
+    link: "Tanoshi Mart",
+    address: "10, Jalan Radin Bagus 6, Bandar Baru Sri Petaling, 57000 Kuala Lumpur,..",
+    likeimg: "https://www.kindmeal.my/images/icon_heart_darkgrey.svg",
+    camara: "https://www.kindmeal.my/images/icon_camera_darkgrey.png",
+    msg: "https://www.kindmeal.my/images/icon_comment_darkgrey.png",
+    des: "今天來 Tanoshi Mart 買無酒精紅酒🍷，遇到我的birthday month, 剛好這裡會員有送壽星一杯辣辣杯.. see more"
+
+},
+{
+    logo: "https://www.kindmeal.my/photos/member/22/22038-s.jpg",
+    name: "JasonFong",
+    date: "Jun 12th 2022",
+    image: ["https://www.kindmeal.my/photos/moment/24/24018-45760-m.jpg",
+        "https://www.kindmeal.my/photos/moment/24/24027-45794-m.jpg",
+        "https://www.kindmeal.my/photos/moment/24/24041-45833-m.jpg"
+    ],
+    socialLogo: "https://www.kindmeal.my/images/icon_facebook_moment.png",
+    link: "Tanoshi Mart",
+    address: "10, Jalan Radin Bagus 6, Bandar Baru Sri Petaling, 57000 Kuala Lumpur,..",
+    likeimg: "https://www.kindmeal.my/images/icon_heart_darkgrey.svg",
+    camara: "https://www.kindmeal.my/images/icon_camera_darkgrey.png",
+    msg: "https://www.kindmeal.my/images/icon_comment_darkgrey.png",
+    des: "今天來 Tanoshi Mart 買無酒精紅酒🍷，遇到我的birthday month, 剛好這裡會員有送壽星一杯辣辣杯.. see more"
+
+},
+{
+    logo: "https://www.kindmeal.my/photos/member/35/35238-s.jpg",
+    name: "CindyChang",
+    date: "Jun 13th 2022",
+    image: ["https://www.kindmeal.my/photos/moment/24/24024-45787-m.jpg",
+        "https://www.kindmeal.my/photos/moment/24/24024-45787-m.jpg",
+        "https://www.kindmeal.my/photos/moment/24/24027-45794-m.jpg"
+    ],
+
+    likeimg: "https://www.kindmeal.my/images/icon_heart_darkgrey.svg",
+    camara: "https://www.kindmeal.my/images/icon_camera_darkgrey.png",
+    msg: "https://www.kindmeal.my/images/icon_comment_darkgrey.png",
+    des: "早餐在怡保望里万已刹早上素食档,谢谢好友帶我去吃一餐簡簡單單的早餐,可是很美味都是小时候的味道,幸福的感觉🙏😆 see more",
+
+},
+{
+    logo: "https://www.kindmeal.my/photos/member/14/14169-s.jpg",
+    name: "MayNg",
+    date: "Jun 13th 2022",
+    image: ["https://www.kindmeal.my/photos/moment/24/24024-45787-m.jpg",
+        "https://www.kindmeal.my/photos/moment/24/24027-45794-m.jpg",
+        "https://www.kindmeal.my/photos/moment/24/24041-45833-m.jpg"
+    ],
+
+    likeimg: "https://www.kindmeal.my/images/icon_heart_darkgrey.svg",
+    camara: "https://www.kindmeal.my/images/icon_camera_darkgrey.png",
+    msg: "https://www.kindmeal.my/images/icon_comment_darkgrey.png",
+    des: "Happy Vegetarian in Johor Bahru! Nothing beats having the best Ingots Dumplings or Wantons (some called it) in JB! Love it when e.. see more",
+
+},{
+    logo: "https://www.kindmeal.my/photos/member/25/25560-s.jpg",
+    name: "LimKengTiong",
+    date: "Jun 14th 2022",
+    image: ["https://www.kindmeal.my/photos/moment/24/24024-45787-m.jpg",
+
+        "https://www.kindmeal.my/photos/moment/24/24024-45786-m.jpg",
+        "https://www.kindmeal.my/photos/moment/24/24039-45827-m.jpg"
+
+    ],
+    socialLogo: "https://www.kindmeal.my/images/icon_facebook_moment.png",
+    link: "GEKIL",
+    address: "no. 49-g jalan pju 5/20 the strand, 47810 Petaling Jaya",
+    likeimg: "https://www.kindmeal.my/images/icon_heart_darkgrey.svg",
+    camara: "https://www.kindmeal.my/images/icon_camera_darkgrey.png",
+    msg: "https://www.kindmeal.my/images/icon_comment_darkgrey.png",
+    des: "鸳鸯火锅（麻辣+番茄汤底） 北京烤鸭",
+
+},
+{
+    logo: "https://www.kindmeal.my/photos/member/12/12420-s.jpg",
+    name: "MeiMei",
+    date: "Jun 17th 2022",
+    image: ["https://www.kindmeal.my/photos/moment/24/24057-45887-m.jpg",
+
+        "https://www.kindmeal.my/photos/moment/24/24057-45887-m.jpg",
+        "https://www.kindmeal.my/photos/moment/24/24057-45887-m.jpg"
+
+    ],
+    socialLogo: "https://www.kindmeal.my/images/icon_facebook_moment.png",
+    link: "Hijau",
+    address: "REX KL, 80, Jalan Sultan, City Centre, 50000 Kuala Lumpur, W..",
+    likeimg: "https://www.kindmeal.my/images/icon_heart_darkgrey.svg",
+    camara: "https://www.kindmeal.my/images/icon_camera_darkgrey.png",
+    msg: "https://www.kindmeal.my/images/icon_comment_darkgrey.png",
+    des: "来茨场街逛可以来REXKL里的 Hijau 找素食。菜单上全是vegan纯素(纯植物但不确定有没有葱蒜，可以当下问服务员.. see more",
+
+},
+{
+    logo: "https://www.kindmeal.my/photos/member/11/11540-s.jpg",
+    name: "ChewLengLeng",
+    date: "Jun 15th 2022",
+    image: ["https://www.kindmeal.my/photos/moment/24/24024-45786-m.jpg",
+        "https://www.kindmeal.my/photos/moment/24/24039-45827-m.jpg",
+        "https://www.kindmeal.my/photos/moment/24/24032-45800-m.jpg"
+
+    ],
+    likeimg: "https://www.kindmeal.my/images/icon_heart_darkgrey.svg",
+    camara: "https://www.kindmeal.my/images/icon_camera_darkgrey.png",
+    msg: "https://www.kindmeal.my/images/icon_comment_darkgrey.png",
+    des: "小炒RM7.00起 Vegetarian stall at Restoran 2+1 素食档在贰加壹茶餐室 Add :",
 
 }
 ]
