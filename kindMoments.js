@@ -319,23 +319,39 @@ function displayProduct(product, content, rows_per_page, page) {
     filtered.map(function (ele) {
         let card = document.createElement("div");
         let box = document.createElement("div");
+        box.style.cursor = "pointer";
+        box.addEventListener("click",function(){
+            window.location.href="shop.html"
+        })
         // div1
         div1 = document.createElement("div");
 
         let logo = document.createElement("img");
         logo.src = ele.logo;
+        logo.style.cursor = "pointer";
+        logo.addEventListener("click", function () {
+            window.location.href = "profile.html"
+        })
 
 
         let hbody = document.createElement("div");
         let name = document.createElement("p")
         name.innerText = ele.name;
+        name.classList.add("name");
+        name.addEventListener("click", function () {
+            window.location.href = "profile.html"
+        })
         let date = document.createElement("p")
         date.innerText = ele.date;
         hbody.append(name, date)
 
         let btn = document.createElement("button");
         btn.innerText = "View"
+        btn.addEventListener("click", function () {
+            window.location.href = "profile.html"
+        })
         div1.append(logo, hbody, btn)
+
         //div2
         // div2 = document.createElement("div");
 
@@ -378,10 +394,18 @@ function displayProduct(product, content, rows_per_page, page) {
 
         let socialimg = document.createElement("img");
         socialimg.src = ele.socialLogo;
+        socialimg.style.cursor="pointer";
+        socialimg.addEventListener("click",function(){
+            window.location.href="https://www.facebook.com/"
+        })
 
         //inner div
         divinner = document.createElement("div");
         let p1 = document.createElement("p");
+        p1.style.cursor="pointer";
+        p1.addEventListener("click",function(){
+            window.location.href="https://www.facebook.com/"
+        })
         let p2 = document.createElement("p");
 
         if (ele.address !== undefined && ele.link !== undefined) {
