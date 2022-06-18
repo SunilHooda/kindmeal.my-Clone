@@ -1,0 +1,95 @@
+#header {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  /* border: 1px solid red; */
+  background-color: #f0f0f0;
+}
+#headContainer {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  /* border: 1px solid teal; */
+}
+#headContainer > div {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+#headContainer > div > h2 {
+  color: rgb(92, 90, 90);
+  margin-bottom: -5px;
+}
+#headContainer > p {
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+#buttons {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+#buttons > button {
+  width: 20%;
+  background-color: white;
+  border: 1px solid rgb(92, 91, 91);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+#buttons > button > a {
+  cursor: pointer;
+  text-decoration: none;
+  color: darkgray;
+}
+#pages {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+#pages > div {
+  width: 5%;
+}
+#coupons {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  gap: 20px;
+  margin-top: 10px;
+}
+.cards {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  /* border: 1px solid blue; */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 10px;
+}
+.cards > img {
+  width: 100%;
+  height: 200px;
+}
+.cards > h3 {
+  margin-bottom: -10px;
+  font-size: 16px;
+}
+.cards > h4 {
+  margin-bottom: -10px;
+  font-size: 13px;
+}
+.cards > p {
+  margin-bottom: 5px;
+  font-size: 11px;
+}

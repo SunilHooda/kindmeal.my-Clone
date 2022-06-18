@@ -1,0 +1,28 @@
+ {
+      resName: "",
+      resDescrip:
+        "",
+      resAddHead: "Address",
+      resAdd:
+        "",
+      resMobHead: "Phone",
+      resNumber: "",
+      resTimeHead: "Opening Hours",
+      resTiming: "",
+      resLocation: "",
+    },
+
+
+     {
+      dishCategory: "",
+      dishName: "",
+      resName: "",
+      resDescription:"",
+      buttonLink:"",
+    },
+    {
+      dishImg: "",
+      dishName: "",
+      resName: "",
+      resLocation:"",
+    },
