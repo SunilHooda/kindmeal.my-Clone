@@ -1,0 +1,126 @@
+#header {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  /* border: 1px solid red; */
+  background-color: #f0f0f0;
+}
+#headContainer {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  /* border: 1px solid teal; */
+}
+#headContainer > h2 {
+  color: rgb(92, 90, 90);
+  margin-bottom: -5px;
+}
+
+#headContainer > p {
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+#buttons {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+#buttons > button {
+  width: 20%;
+  background-color: white;
+  border: 1px solid rgb(92, 91, 91);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+#buttons > button > a {
+  cursor: pointer;
+  text-decoration: none;
+  color: darkgray;
+}
+#pages {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+#pages > div {
+  width: 5%;
+}
+
+#coupons {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+/* cards style */
+.cards {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  border: 1px solid var(--grey3);
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+/* inside cards first div - image + floating text */
+.cards > div:first-child {
+  position: relative;
+}
+.cards > div:first-child > a > img {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.cards > div:first-child > a > img:hover {
+  cursor: pointer;
+}
+.cards > div:first-child > p:last-child {
+  position: absolute;
+  width: 100%;
+  bottom: 2px;
+  text-align: center;
+  padding: 5px 0px;
+  margin: 0;
+  font-size: 18px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+/* inside cards 2nd div - dish category + chef name */
+.cards > div:nth-child(2) {
+  padding: 0px 10px;
+  padding-bottom: 10px;
+}
+.cards > div:nth-child(2) > p > a {
+  text-decoration: none;
+  color: var(--grey1);
+  font-size: 18px;
+}
+.cards > div:nth-child(2) > p > a:hover {
+  text-decoration: underline;
+  margin-bottom: -5px;
+}
+.cards > div:nth-child(2) > button {
+  margin: 0;
+  background-color: red;
+  padding: 6px 20px;
+  border: none;
+  border-radius: 5px;
+}
+.cards > div:nth-child(2) > button:hover {
+  background-color: green;
+  color: blue;
+}
+.cards > div:nth-child(2) > button > a {
+  color: white;
+  text-decoration: none;
+}

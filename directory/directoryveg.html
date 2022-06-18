@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KindMeal-Directory</title>
+    <style></style>
+    <link rel="stylesheet" href="directoryveg.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div id="headContainer">
+        <h2>Vegetarian Restaurants In Malaysia</h2>
+        <p>
+          Looking for even more delicious choices? Explore hundreds of
+          vegetarian and vegan restaurants in Malaysia.
+        </p>
+        <p>
+          Are you a restaurant or cafe owner? Boost your business with an
+          attractive KindMeal profile and deals for FREE.
+          <span
+            ><a href="https://www.kindmeal.my/businesses.htm"
+              >Find out more</a
+            ></span
+          >
+          or
+          <span
+            ><a href="https://www.kindmeal.my/contact.htm">contact us</a></span
+          >
+          contact us now.
+        </p>
+      </div>
+
+      <div id="inputs">
+        <input id="shopName" type="text" placeholder="Search Shop Name" />
+        <select name="" id="allShops">
+          <option value="">All Shops</option>
+          <option value="Selangor">Selangor</option>
+          <option value="Kuala Lumpur">Kuala Lumpur</option>
+          <option value="Johar">Johar</option>
+          <option value="Kedah">Kedah</option>
+          <option value="Melaka">Melaka</option>
+          <option value="Pahang">Pahang</option>
+        </select>
+        <button id="btn1">Search Shops</button>
+        <button id="btn2">Add a Shop</button>
+      </div>
+    </div>
+
+    <div id="buttons">
+      <button><a href="directoryveg.html">Vegetarian Directory</a></button>
+      <button><a href="featured.html">Featured Restaurants</a></button>
+      <button><a href="foodmenu.html">Food Menu</a></button>
+    </div>
+
+    <div id="pages">
+      <div>Page:</div>
+      <div><a href="directoryveg.html">1</a></div>
+      <div><a href="directoryveg2.html">2</a></div>
+      <div><a href="directoryveg3.html">3</a></div>
+    </div>
+
+    <div class="cards">
+      <!-- all cards should be appended here -->
+    </div>
+  </body>
+</html>
+<script>
+  let vegData = [
+    {
+      resName: "AENON The Health Kitchen",
+      resDescrip:
+        "AENON Health Kitchen, a hygienic restaurant that provides simple, palatable, wholesome & healthy food at affordable prices. We are dedicated in offering an extraordinary dining experience and providing consumers the opportunity to learn on healthy lifestyle. Health is a choice, not a chance!",
+      resAddHead: "Address",
+      resAdd:
+        "1, Jalan 4/93, Taman Miharja, Jalan Cheras, 55200 Kuala Lumpur, Selangor",
+      area: "Selangor",
+      resMobHead: "Phone",
+      resNumber: "03 - 9201 0972",
+      resTimeHead: "Opening Hours",
+      resTiming: "Sun - Thu: 11am - 3pm & 6pm - 9pm; Fri - Sat: Closed",
+      resLocation: "https://staticmapmaker.com/img/google@2x.png",
+    },
+
+    {
+      resName: "Alam N-Ion",
+      resDescrip:
+        "We serve delicious home-cooked vegetarian meals, crafted with the healthiest ingredients and plenty of love. We also sell natural,handmade clay and wooden Buddhist crafts, health supplements, andhomemade beauty products.",
+      resAddHead: "Address",
+      resAdd:
+        " 15, Jalan 12/144A, Taman Bukit Cheras , 56000 Kuala Lumpur, Kuala Lumpur",
+      area: "Kuala Lumpur",
+      resMobHead: "Phone",
+      resNumber: "019-275 9973",
+      resTimeHead: "Opening Hours",
+      resTiming: "Fri - Wed: 9am - 4pm; Thu: Closed",
+      resLocation: "https://staticmapmaker.com/img/google@2x.png",
+    },
+    {
+      resName: "Annalakshmi Vegetarian Restaurant",
+      resDescrip: "",
+      resAddHead: "Address",
+      resAdd: "114-116, Jalan Berhala, Brickfields, Kuala Lumpur, 50470, Kedah",
+      area: "Kedah",
+      resMobHead: "Phone",
+      resNumber: "03-22723799, 03-22843799",
+      resTimeHead: "Opening Hours",
+      resTiming: "Tue-Sun 11am-3pm, 6:30-10pm.",
+      resLocation: "https://i.stack.imgur.com/xLP06.png",
+    },
+    {
+      resName: "Ba Xian Vegetarian Court",
+      resDescrip: "",
+      resAddHead: "Address",
+      resAdd:
+        "12,14,14-1, Persiaran Mergatua, Kepong Baru, Kuala Lumpur, 52100, Selangor",
+      area: "Selangor",
+      resMobHead: "Phone",
+      resNumber: "03-62778052",
+      resTimeHead: "Opening Hours",
+      resTiming: "Daily 10am-10pm.",
+      resLocation:
+        "https://developers.google.com/maps/documentation/maps-static/images/s150x2.png",
+    },
+
+    {
+      resName: "Bakti Woodlands Vegetarian Food Cafe",
+      resDescrip: "",
+      resAddHead: "Address",
+      resAdd:
+        "55 Leboh Ampang (at near Masjid Jamek LRT station), Kuala Lumpur, 50100, Kuala Lumpur",
+      area: "Kuala Lumpur",
+      resMobHead: "Phone",
+      resNumber: "03-20342399",
+      resTimeHead: "Opening Hours",
+      resTiming: "Mon-Sun 7:30am-9:30pm",
+      resLocation:
+        "https://d32ogoqmya1dw8.cloudfront.net/images/sp/library/google_earth/google_maps_new_york.v2.jpg",
+    },
+    {
+      resName: "Berjaya Cafe",
+      resDescrip:
+        "Berjaya Cafe, the epitome for the vegetarian lovers that brings the opulence, style, and is entwined with the gastronomic taste from the best chef’s in town.",
+      resAddHead: "Address",
+      resAdd:
+        "Level 14 West, Berjaya Times Square Hotel, No. 1, Jalan Imbi, Bukit Bintang, 55100 Kuala Lumpur, Johar",
+      area: "Johar",
+      resMobHead: "Phone",
+      resNumber: "03-21178000",
+      resTimeHead: "Opening Hours",
+      resTiming: "Daily: 6:30am - 9:00pm",
+      resLocation:
+        "https://www.google.com/maps/d/u/0/thumbnail?mid=1PoSDxt0hdiE3qG61Wb1BHyXSMNY",
+    },
+    {
+      resName: "Beyond Veggie - Nexus Bangsar South Branch",
+      resDescrip:
+        "A refreshing Meatless Dining Concept from Secret Recipe Cakes & Café Group. Extensive Menu range inspired by all fresh and natural products with a selection of natural products and ingredients",
+      resAddHead: "Address",
+      resAdd:
+        "Unit G-8, Ground Floor, Nexus, No. 7, Jalan Kerinchi, 59200 Kuala Lumpur, Selangor",
+      area: "Selangor",
+      resMobHead: "Phone",
+      resNumber: "+603-2242 1473",
+      resTimeHead: "Opening Hours",
+      resTiming: "Mon-Sun, 10am-10pm",
+      resLocation: "https://i.stack.imgur.com/sakPM.png",
+    },
+    {
+      resName: "Beyond Veggie - TTDI Branch",
+      resDescrip:
+        "A refreshing Meatless Dining Concept from Secret Recipe Cakes & Café Group. Extensive Menu range inspired by all fresh and natural products with a selection of natural products and ingredients",
+      resAddHead: "Address",
+      resAdd:
+        "Lot 54, Ground Floor, Jalan Tun Mohd. Fuad 1, Taman Tun Dr Ismail, 600000 Kuala Lumpur, Kuala Lumpur",
+      area: "Kuala Lumpur",
+      resMobHead: "Phone",
+      resNumber: "+603-7722 1142",
+      resTimeHead: "Opening Hours",
+      resTiming: "Mon-Sun, 10am-10pm",
+      resLocation: "https://i.stack.imgur.com/xLP06.png",
+    },
+    {
+      resName: "Biogreen Kepong Bukit Maluri",
+      resDescrip:
+        "Made Fresh, Eat Fresh Every Day at Valentime! Valentime by Biogreen is a bakery that bakes only organic and healthy bread using the best ingredients including organic unbleached flour, unrefined sugar, grape seed oil, Biogreen products and other healthy ingredients",
+      resAddHead: "Address",
+      resAdd:
+        "No. 9 Jalan Burung Tiung, Taman Bukit Maluri, 52100 Kepong, Johar",
+      area: "Johar",
+      resMobHead: "Phone",
+      resNumber: "03-6270 1284",
+      resTimeHead: "Opening Hours",
+      resTiming:
+        "Mon-Sat: 10am - 7.30pm (Valentime Bread Available Mon-Sat 10am-7.30pm)",
+      resLocation: "https://i.stack.imgur.com/HWAas.jpg",
+    },
+    {
+      resName: "Blue Boy Vegetarian Food Centre",
+      resDescrip: "",
+      resAddHead: "Address",
+      resAdd:
+        "6001 Blue Boy Mansion, Jalan Tong Shin (at Jalan Pudu Lama), Kuala Lumpur, 55100, Johar",
+      area: "Johar",
+      resMobHead: "Phone",
+      resNumber: "03-21449011",
+      resTimeHead: "Opening Hours",
+      resTiming: "Mon-Sun 8:00am-6:00pm",
+      resLocation:
+        "https://i.pcmag.com/imagery/articles/01IB0rgNa4lGMBlmLyi0VP6-6.fit_lim.size_1050x.png",
+    },
+  ];
+</script>
+<script src="directoryveg.js"></script>
+<a href=""></a>
