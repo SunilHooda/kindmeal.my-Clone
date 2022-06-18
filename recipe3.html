@@ -165,6 +165,26 @@
     margin-top: 10px;
     margin-left: 125px ;
 }
+#pages{
+    margin: 0px auto;
+    display: flex;
+    justify-content: left;
+}
+#pages>div{            
+    padding: 10px;
+    margin: 10px;
+}
+#pages>div>a{
+    text-decoration: none;
+    color: #75b6f6;
+}
+.selected{
+    background-color: gainsboro;
+    color: black;
+}
+#pages>.selected>a{
+    color: black;
+}
 </style>
 <body>
     <div id="front">
@@ -201,7 +221,7 @@
 <div><p>Desserts</p></div>
 <div><p>Snacks</p></div>
 <div><p>Main Dishes</p></div>
-<div><p>Salads</p></div>
+<div id="Saladsbtn"><p>Salads</p></div>
 <div><p>Side Dishes</p></div>
 <div><p>Soups</p></div>
 </div>
@@ -209,7 +229,7 @@
 
 <div id="reciperow">
 
-    <div id="recipe">
+    <div id="recipe" class="Salads">
         <div id="first">
             <img src="https://www.kindmeal.my/photos/member/20/20322-s.jpg" alt="">
             <p>Janelle</p>
@@ -346,7 +366,7 @@
     </div>
 
    
-     <div id="recipe">
+     <div id="recipe" class="Salads">
         <div id="first">
             <img src="https://www.kindmeal.my/images/default_male-s.jpg" alt="">
             <p>BINAYKUMARKESHR</p>
@@ -544,5 +564,28 @@
 
 </div>
 
+
+<div id="pages">
+    <div>Page:</div>
+    <div ><a href="recipe1.html">1</a></div>
+    <div><a href="recipe2.html">2</a></div>
+    <div class="selected"><a href="recipe3.html">3</a></div>
+</div>
+
 </body>
 </html>
+
+<script>
+let salads=document.querySelectorAll(".Salads")
+salads.forEach(function(salads){
+salads.style.display="none"
+})
+
+document.querySelector("#Saladsbtn")
+.addEventListener("click",function(){
+    
+})
+
+
+
+</script>
