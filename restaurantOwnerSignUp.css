@@ -78,7 +78,11 @@
     color: red;
     font-style: italic;
 }
+
+
 /* Right Side Form */
+
+
 #signupForm>h3{
     margin-top: 50px;
     color: #616161;
@@ -126,9 +130,9 @@ tr > * + * {
     height: 30px;
     border-radius: 5px;
 }
-.belowPassInput{
-    /* border: 1px solid black; */
-}
+/* .belowPassInput{
+    border: 1px solid black;
+} */
 .blueUrl{
     font-size: 15px;
     color: #448aff;
