@@ -324,12 +324,7 @@ select {
   color: white;
   font-weight: bold;
 }
-#footer .insidediv > p {
-  padding: 5px;
 
-  font-size: 15px;
-  color: grey;
-}
 #navbar2 {
   width: 100%;
   height: auto;
@@ -443,4 +438,10 @@ a {
   text-align: center;
   margin: auto;
   padding-bottom: 20px;
+}
+#footer .insidediv > p {
+  padding: 5px;
+
+  font-size: 15px;
+  color: grey;
 }

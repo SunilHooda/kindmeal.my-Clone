@@ -179,3 +179,10 @@ td:nth-child(1){
     font-weight: bolder;
     border-radius: 5px;
 }
+li{
+    list-style: none;
+   
+}
+ul{
+    width: 100%;
+}

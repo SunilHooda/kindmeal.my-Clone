@@ -5,98 +5,238 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Articles</title>
-    <style>
-      #upperText {
-        width: 100%;
-        margin: auto;
-        height: auto;
-        background-color: lightgray;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-      }
-      #upperText > div {
-        width: 70%;
-        height: auto;
-        margin: auto;
-      }
-      #upperText > div > h2 {
-        color: rgb(96, 96, 96);
-      }
-      #upperText > div > p {
-        font-size: 14px;
-      }
-      a {
-        text-decoration: none;
-      }
-
-      #container {
-        width: 100%;
-        height: auto;
-        margin: auto;
-        /* border: 1px solid red; */
-      }
-      #main {
-        width: 70%;
-        height: auto;
-        margin: auto;
-        /* border: 1px solid blue; */
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-      }
-      #imageDiv {
-        width: 100%;
-        height: auto;
-        margin: auto;
-        /* border: 1px solid teal; */
-      }
-      #imageDiv > img {
-        width: 100%;
-        height: 250px;
-      }
-      #textDiv {
-        width: 100%;
-        height: auto;
-        margin: auto;
-        /* border: 1px solid black; */
-        padding: 0px 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-      }
-      #textDiv > h3 + p {
-        margin-top: -20px;
-        font-size: 12px;
-      }
-      #textDiv > p + p {
-        font-size: 13px;
-      }
-      button {
-        background-color: red;
-        padding: 5px 25px;
-        border-radius: 4px;
-        font-size: 16px;
-        border: none;
-      }
-      button > a {
-        color: white;
-      }
-      #pages {
-        width: 70%;
-        height: auto;
-        margin: auto;
-        display: flex;
-        justify-content: flex-start;
-        margin-top: 20px;
-        margin-bottom: 5px;
-      }
-      #pages > div {
-        width: 5%;
-      }
-    </style>
+    <link rel="stylesheet" href="../index.css">
   </head>
+  <style>
+    #upperText {
+      width: 100%;
+      margin: auto;
+      height: auto;
+      background-color: lightgray;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    #upperText > div {
+      width: 70%;
+      height: auto;
+      margin: auto;
+    }
+    #upperText > div > h2 {
+      color: rgb(96, 96, 96);
+    }
+    #upperText > div > p {
+      font-size: 14px;
+    }
+    a {
+      text-decoration: none;
+    }
+
+    #container {
+      width: 100%;
+      height: auto;
+      margin: auto;
+      /* border: 1px solid red; */
+    }
+    #main {
+      width: 70%;
+      height: auto;
+      margin: auto;
+      /* border: 1px solid blue; */
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    #imageDiv {
+      width: 100%;
+      height: auto;
+      margin: auto;
+      /* border: 1px solid teal; */
+    }
+    #imageDiv > img {
+      width: 100%;
+      height: 250px;
+    }
+    #textDiv {
+      width: 100%;
+      height: auto;
+      margin: auto;
+      /* border: 1px solid black; */
+      padding: 0px 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    #textDiv > h3 + p {
+      margin-top: -20px;
+      font-size: 12px;
+    }
+    #textDiv > p + p {
+      font-size: 13px;
+    }
+    #main button {
+      background-color: red;
+      padding: 5px 25px;
+      border-radius: 4px;
+      font-size: 16px;
+      border: none;
+    }
+    button > a {
+      color: white;
+    }
+    #pages {
+      width: 70%;
+      height: auto;
+      margin: auto;
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 20px;
+      margin-bottom: 5px;
+    }
+    #pages > div {
+      width: 5%;
+    }
+
+    /* footer */
+
+    #footer .insidediv h4 {
+      padding: 5px;
+      color: white;
+    }
+    #footer {
+      width: 100%;
+      height: auto;
+      margin: auto;
+
+      /* border: 1px solid red; */
+      background-color: green;
+      margin-top: 10px;
+    }
+
+    .insidediv {
+      width: 100%;
+      height: 160px;
+      margin: auto;
+      /* border: 1px solid blue; */
+      display: flex;
+      flex-direction: column;
+    }
+    .insidediv > p {
+      margin-top: -6px;
+    }
+    #footer > p {
+      font-size: 12px;
+      color: white;
+      width: 30%;
+      text-align: center;
+      margin: auto;
+      margin-top: 15px;
+    }
+    #footer > p + p {
+      font-size: 10px;
+      color: white;
+      width: 60%;
+      text-align: center;
+      margin: auto;
+      padding-bottom: 20px;
+    }
+    #footer .insidediv h4 {
+      padding: 5px;
+      color: white;
+    }
+    #footer {
+      width: 100%;
+      height: auto;
+      margin: auto;
+      /* border: 1px solid red; */
+      background-color: green;
+      margin-top: 10px;
+    }
+
+    #maincontainer {
+      width: 70%;
+      height: auto;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+    .insidediv {
+      width: 100%;
+      height: 160px;
+      margin: auto;
+      /* border: 1px solid blue; */
+      display: flex;
+      flex-direction: column;
+    }
+    .insidediv > p {
+      margin-top: -6px;
+    }
+    #footer > p {
+      font-size: 12px;
+      color: white;
+      width: 30%;
+      text-align: center;
+      margin: auto;
+      margin-top: 15px;
+    }
+    #footer > p + p {
+      font-size: 10px;
+      color: white;
+      width: 60%;
+      text-align: center;
+      margin: auto;
+      padding-bottom: 20px;
+    }
+  </style>
   <body>
+    <!-- navbar -->
+
+    <div id="navbar1">
+      <div>
+        <img
+          src="https://www.kindmeal.my/images/logo-kindmeal.png"
+          alt="Error"
+        />
+      </div>
+      <div>
+        <a href="https://www.kindmeal.my/widget.htm" target="_blank">
+          <img
+            src="https://www.kindmeal.my/images/follow_blog_grey.png"
+            alt="Error"
+        /></a>
+        <a href="https://www.facebook.com/KindMeal.my" target="_blank">
+          <img
+            src="https://www.kindmeal.my/images/follow_facebook_grey.png"
+            alt="Error"
+        /></a>
+        <a href="https://twitter.com/KindMeal" target="_blank"
+          ><img
+            src="https://www.kindmeal.my/images/follow_twitter_grey.png"
+            alt="Error"
+        /></a>
+      </div>
+      <div>
+        <p>Login</p>
+        <button id="fbBtn">Facebook</button>
+        <button id="emailBtn">Email</button>
+        <p>Sign Up</p>
+      </div>
+    </div>
+    <div id="navbar2">
+      <div id="buttons">
+        <div>
+          <span><a href="index.html">Home</a></span>
+        </div>
+        <div><a href="mealDeals.html">Meal Deals</a></div>
+        <div><a href="kindmoments.html">KindMoments</a></div>
+        <div>Hot Picks</div>
+        <div>Recipe</div>
+        <div>Directory</div>
+        <div><a href="./article/article.html">Articles</a></div>
+        <div><a href="helppage.html">Help</a></div>
+      </div>
+    </div>
+
     <div id="upperText">
       <div>
         <h2>Yummy News, Articles & Videos</h2>
@@ -370,5 +510,43 @@
         </div>
       </div>
     </div>
+    <!-- footer code -->
+    <footer id="footer">
+      <div id="maincontainer">
+        <div class="insidediv">
+          <h4>General</h4>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="">Sign Up</a></p>
+          <p><a href="">Restaurateurs</a></p>
+          <p><a href="">AboutKindMeal.my</a></p>
+          <p><a href="">Help & FAQ</a></p>
+          <p><a href="">Contact Us</a></p>
+        </div>
+        <div class="insidediv">
+          <h4>Features</h4>
+          <p><a href="">Meat-Free Deals</a></p>
+          <p><a href="">Tasty Menus</a></p>
+          <p><a href="">Kind Moments</a></p>
+          <p><a href="">Meat-Free Recipes</a></p>
+          <p><a href="">Featured Restaurants</a></p>
+          <p><a href="">Vegetarian & Vegan Directory</a></p>
+        </div>
+        <div class="insidediv">
+          <h4>Social Media</h4>
+          <p>
+            <a href="https://www.kindmeal.my/widget.htm">KindMeal Widget</a>
+          </p>
+          <p><a href="https://www.facebook.com/KindMeal.my">Facebook</a></p>
+          <p><a href="https://twitter.com/KindMeal">Twitter</a></p>
+          <p><a href="http://instagram.com/KindMeal.my">Instagram</a></p>
+        </div>
+      </div>
+      <p>Copyright © KindMeal.my, 2014 - 2022. All rights reserved.</p>
+      <p>
+        This website promotes compassionate, meat-free dining experience. Some
+        food may contain eggs, dairy products or alcohol, please view individual
+        listings for details.
+      </p>
+    </footer>
   </body>
 </html>

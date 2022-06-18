@@ -6,57 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SignUp For Food Lover</title>
     <link rel="stylesheet" href="foodLoverSignUpPage.css" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-<!-- navbar -->
+    <!-- navbar -->
 
-<div id="navbar1">
-  <div>
-    <img
-      src="https://www.kindmeal.my/images/logo-kindmeal.png"
-      alt="Error"
-    />
-  </div>
-  <div>
-    <a href="https://www.kindmeal.my/widget.htm" target="_blank">
-      <img
-        src="https://www.kindmeal.my/images/follow_blog_grey.png"
-        alt="Error"
-    /></a>
-    <a href="https://www.facebook.com/KindMeal.my" target="_blank">
-      <img
-        src="https://www.kindmeal.my/images/follow_facebook_grey.png"
-        alt="Error"
-    /></a>
-    <a href="https://twitter.com/KindMeal" target="_blank"
-      ><img
-        src="https://www.kindmeal.my/images/follow_twitter_grey.png"
-        alt="Error"
-    /></a>
-  </div>
-  <div>
-    <p>Login</p>
-    <button id="fbBtn">Facebook</button>
-    <button id="emailBtn">Email</button>
-    <p>Sign Up</p>
-  </div>
-</div>
-<div id="navbar2">
-  <div id="buttons">
-    <div>
-      <span><a href="index.html">Home</a></span>
+    <div id="navbar1">
+      <div>
+        <img
+          src="https://www.kindmeal.my/images/logo-kindmeal.png"
+          alt="Error"
+        />
+      </div>
+      <div>
+        <a href="https://www.kindmeal.my/widget.htm" target="_blank">
+          <img
+            src="https://www.kindmeal.my/images/follow_blog_grey.png"
+            alt="Error"
+        /></a>
+        <a href="https://www.facebook.com/KindMeal.my" target="_blank">
+          <img
+            src="https://www.kindmeal.my/images/follow_facebook_grey.png"
+            alt="Error"
+        /></a>
+        <a href="https://twitter.com/KindMeal" target="_blank"
+          ><img
+            src="https://www.kindmeal.my/images/follow_twitter_grey.png"
+            alt="Error"
+        /></a>
+      </div>
+      <div>
+        <p>Login</p>
+        <button id="fbBtn">Facebook</button>
+        <button id="emailBtn">Email</button>
+        <p><a href="signUpPage.html">Sign Up</a></p>
+      </div>
     </div>
-    <div><a href="mealDeals.html">Meal Deals</a></div>
-    <div><a href="kindmoments.html">KindMoments</a></div>
-    <div>Hot Picks</div>
-    <div>Recipe</div>
-    <div>Directory</div>
-    <div>Articles</div>
-    <div>Help</div>
-  </div>
-</div>
-
+    <div id="navbar2">
+      <div id="buttons">
+        <div>
+          <span><a href="index.html">Home</a></span>
+        </div>
+        <div><a href="mealDeals.html">Meal Deals</a></div>
+        <div><a href="kindmoments.html">KindMoments</a></div>
+        <div>Hot Picks</div>
+        <div>Recipe</div>
+        <div>Directory</div>
+        <div>Articles</div>
+        <div>Help</div>
+      </div>
+    </div>
 
     <div id="main">
       <div>
@@ -279,7 +278,8 @@
                     <select
                       id="country"
                       class="consta borderless"
-                      onchange="populate(id,'state')">
+                      onchange="populate(id,'state')"
+                    >
                       <option value="Your Country">Your Country</option>
                       <option value="india">India</option>
                       <option value="dominica">Dominica</option>
@@ -295,7 +295,7 @@
                 <tr>
                   <td><label for="">State</label></td>
                   <td>
-                    <select id="state" class="consta borderless" >
+                    <select id="state" class="consta borderless">
                       <option value="Select State">Select State</option>
                       <!-- <option class="ind" value="dl">Delhi</option>
                       <option class="ind" value="hr">Haryana</option>
@@ -314,7 +314,8 @@
                       type="radio"
                       name="gender"
                       id="female"
-                      value="Female"/>
+                      value="Female"
+                    />
                     <label for="">Female</label>
                   </td>
                 </tr>
@@ -324,9 +325,9 @@
                 </tr>
               </tbody>
             </table>
-            <input type="checkbox" id="term&cond" class="check" required/>
+            <input type="checkbox" id="term&cond" class="check" required />
             <label for="" class="check">
-                I agree to KindMeal.my's Terms & Conditions
+              I agree to KindMeal.my's Terms & Conditions
             </label>
             <br />
             <input type="submit" value="Join Now" class="btn" />
@@ -334,8 +335,8 @@
         </div>
       </div>
     </div>
-     <!-- footer code -->
-     <footer id="footer">
+    <!-- footer code -->
+    <footer id="footer">
       <div id="maincontainer">
         <div class="insidediv">
           <h4>General</h4>
@@ -379,8 +380,6 @@
 
   let customerArray = JSON.parse(localStorage.getItem("customerData")) || [];
 
- 
-
   // var carsAndModels = {};
   //   carsAndModels['VO'] = ['V70', 'XC60', 'XC90'];
   //   carsAndModels['VW'] = ['Golf', 'Polo', 'Scirocco', 'Touareg'];
@@ -407,7 +406,6 @@
   //   }else{
   //     carModelSelect.disabled = true;
   //   }
-    
 
   // };
   // cardd.addEventListener("change", carSelect);
@@ -461,35 +459,33 @@
       return false;
     }
 
-    if(customerObject.uname === ""){
-        alert("Enter username");
-        return false;
-    }
-    
-    if(customerObject.month === "Month"){
-        alert("Select month");
-        return false;
-    }
-    
-    if(customerObject.day === "Day"){
-        alert("Select Day");
-        return false;
-    }
-    if(customerObject.year === "Year"){
-        alert("Select Year");
-        return false;
+    if (customerObject.uname === "") {
+      alert("Enter username");
+      return false;
     }
 
-    if(customerObject.password.length < 5){
-        alert("Your Password shuld be more than 5 letters");
-       return false;
+    if (customerObject.month === "Month") {
+      alert("Select month");
+      return false;
     }
-    
 
+    if (customerObject.day === "Day") {
+      alert("Select Day");
+      return false;
+    }
+    if (customerObject.year === "Year") {
+      alert("Select Year");
+      return false;
+    }
 
-    if(customerObject.country === "Your Country"){
-        alert("Select Country");
-        return false;
+    if (customerObject.password.length < 5) {
+      alert("Your Password shuld be more than 5 letters");
+      return false;
+    }
+
+    if (customerObject.country === "Your Country") {
+      alert("Select Country");
+      return false;
     }
 
     console.log(customerArray);
@@ -497,7 +493,6 @@
     formTag.reset();
   }
 
-    
   function checkEmail(emailId) {
     let filtered = customerArray.filter(function (element) {
       return emailId === element.emailId;
@@ -515,21 +510,69 @@
     s2.innerHTML = "";
     let optionArr = [];
     if (s1.value == "india") {
-      optionArr = ["delhi|Delhi", "haryana|Haryana", "maharastra|Maharastra","aasam|Aasam","kerala|Kerala"];
+      optionArr = [
+        "delhi|Delhi",
+        "haryana|Haryana",
+        "maharastra|Maharastra",
+        "aasam|Aasam",
+        "kerala|Kerala",
+      ];
     } else if (s1.value == "dominica") {
-      optionArr = ["saintandrew|Saint Andrew", "saintpaul|SaintPaul","saintluke|Saint Luke","saintmark|Saint Mark","saintjohn|Saint John"];
-    }else if (s1.value == "guam") {
-      optionArr = ["agat|Agat", "barrigada|Barrigada","dededo|Dededo","hagatna|Hagatna","yona|Yona"];
-    }else if (s1.value == "iran") {
-      optionArr = ["esfahan|Esfahan", "fars|Fars","gilan|Gilan","illam|Illam","kerman|Kerman"];
-    }else if (s1.value == "japan") {
-      optionArr = ["aichi|Aichi","akita|Akita","chiba|Chiba","hyogo|Hyogo","iwate|Iwate"];
-    }else if (s1.value == "nepal") {
-      optionArr = ["banke|Banke", "bara|Bara","dailekh|Dailekh","doti|Doti","parsa|Parsa"];
-    }else if (s1.value == "qatar") {
-      optionArr = ["addawhah|ad-Dawhah", "alhawr|al-Hawr","alwakrah|al-Wakrah","ummsalal|Umm Salal","assamal|as-Samal"];
-    }else if (s1.value == "sweden") {
-      optionArr = ["dalarna|Dalarna", "halland|Halland","kalmar|Kalmar","skane|Skane","varmland|Varmland"];
+      optionArr = [
+        "saintandrew|Saint Andrew",
+        "saintpaul|SaintPaul",
+        "saintluke|Saint Luke",
+        "saintmark|Saint Mark",
+        "saintjohn|Saint John",
+      ];
+    } else if (s1.value == "guam") {
+      optionArr = [
+        "agat|Agat",
+        "barrigada|Barrigada",
+        "dededo|Dededo",
+        "hagatna|Hagatna",
+        "yona|Yona",
+      ];
+    } else if (s1.value == "iran") {
+      optionArr = [
+        "esfahan|Esfahan",
+        "fars|Fars",
+        "gilan|Gilan",
+        "illam|Illam",
+        "kerman|Kerman",
+      ];
+    } else if (s1.value == "japan") {
+      optionArr = [
+        "aichi|Aichi",
+        "akita|Akita",
+        "chiba|Chiba",
+        "hyogo|Hyogo",
+        "iwate|Iwate",
+      ];
+    } else if (s1.value == "nepal") {
+      optionArr = [
+        "banke|Banke",
+        "bara|Bara",
+        "dailekh|Dailekh",
+        "doti|Doti",
+        "parsa|Parsa",
+      ];
+    } else if (s1.value == "qatar") {
+      optionArr = [
+        "addawhah|ad-Dawhah",
+        "alhawr|al-Hawr",
+        "alwakrah|al-Wakrah",
+        "ummsalal|Umm Salal",
+        "assamal|as-Samal",
+      ];
+    } else if (s1.value == "sweden") {
+      optionArr = [
+        "dalarna|Dalarna",
+        "halland|Halland",
+        "kalmar|Kalmar",
+        "skane|Skane",
+        "varmland|Varmland",
+      ];
     }
     for (option in optionArr) {
       let pair = optionArr[option].split("|");
@@ -540,5 +583,3 @@
     }
   }
 </script>
- 
-
