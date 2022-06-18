@@ -1,4 +1,4 @@
-
+/* main Container */
 #main{
     width: 70%;
     /* border: 1px solid black; */
@@ -7,6 +7,7 @@
     justify-content: space-between;
     font-family: roboto,Arial;
 }
+
 
 /* Left Side */
 #main>div:nth-child(1){
@@ -59,7 +60,9 @@
     text-decoration: underline;
 }
 
+
 /* Right Side */
+
 label{
     color: #212121;
 }
@@ -79,7 +82,11 @@ label{
 .blue:hover{
     text-decoration: underline;
 }
-/* Rigth Side Form */
+
+
+/* -------Rigth Side Form-------- */
+
+
 .yrname{
     margin-top: 5px;
 }
