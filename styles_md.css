@@ -139,12 +139,12 @@ button+button:hover{
 .cards>div:nth-child(2)>p>a:hover{
     text-decoration: underline;
 }
-.cards>div:nth-child(2)>button{
+.cards>div:nth-child(2)>a>button{
     margin: 0;
     color: var(--white);
     background-color: var(--red);
 }
-.cards>div:nth-child(2)>button:hover{
+.cards>div:nth-child(2)>a>button:hover{
     background-color: var(--fadeRed);
 }
 /* inside cards 3rd div  */

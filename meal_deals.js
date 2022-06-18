@@ -6,42 +6,48 @@ let couponsContainer=document.querySelector("#coupons");
 // on loading of page display the data presen in array 
 window.addEventListener("load",displayCards(couponData));
 
+let maxLen=10;
+
 // function to display all the cards from the array
 function displayCards(data){
-    data.forEach(function(restaurant){
-        let cards=document.createElement("div");
-        cards.setAttribute("class","cards");
-        cards.innerHTML=`
-                <div>
-                    <a href="${restaurant.dishLink}"><img src="${restaurant.dishCategory}"></a>
-                    <p>${restaurant.dishName}</p>
-                </div>
-                <div>
-                    <p><a href="${restaurant.resLink}">${restaurant.resName}</a> —  <small id="greyText">${restaurant.resLocation}</small></p>
-                    <small>${restaurant.resDescription}</small>
-                    <br><br>
-                    <button>Get Free Coupon</button>
-                    <span id="rating"></span>
-                </div>
-                <div>
+
+    data.forEach(function(restaurant,index){
+        // this will ensure to print the cards only 10 times irrespective of the array length
+        if(index<10){
+            let cards=document.createElement("div");
+            cards.setAttribute("class","cards");
+            cards.innerHTML=`
                     <div>
-                        <img src="https://www.kindmeal.my/images/icon_egg.png" alt="">
-                        <img src="https://www.kindmeal.my/images/icon_milk.png" alt="">
-                        <img src="https://www.kindmeal.my/images/icon_alcohol_disabled.png" alt="">
+                        <a href="${restaurant.dishLink}"><img src="${restaurant.dishCategory}"></a>
+                        <p>${restaurant.dishName}</p>
                     </div>
                     <div>
-                        <span>KindMeal Discount</span>
-                        <br>
-                        <span>20% Off</span>
+                        <p><a href="${restaurant.resLink}">${restaurant.resName}</a> —  <small id="greyText">${restaurant.resLocation}</small></p>
+                        <small>${restaurant.resDescription}</small>
+                        <br><br>
+                        <a href="${restaurant.dishLink}"><button>Get Free Coupon</button></a>
+                        <span id="rating"></span>
                     </div>
                     <div>
-                        <span>Expires In</span>
-                        <br>
-                        <span>5 Days</span>
+                        <div>
+                            <img src="https://www.kindmeal.my/images/icon_egg.png" alt="">
+                            <img src="https://www.kindmeal.my/images/icon_milk.png" alt="">
+                            <img src="https://www.kindmeal.my/images/icon_alcohol_disabled.png" alt="">
+                        </div>
+                        <div>
+                            <span>KindMeal Discount</span>
+                            <br>
+                            <span>20% Off</span>
+                        </div>
+                        <div>
+                            <span>Expires In</span>
+                            <br>
+                            <span>5 Days</span>
+                        </div>
                     </div>
-                </div>
-        `;
-        couponsContainer.append(cards);
+            `;
+            couponsContainer.append(cards);
+        }
     });
 }
     
