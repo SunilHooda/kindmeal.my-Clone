@@ -1,0 +1,184 @@
+
+#main{
+    width: 70%;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+/* Left Side */
+#main>div:nth-child(1){
+    width: 25%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+   
+}
+#main>div:nth-child(1)>div{
+    width: 90%;
+    border: 1px solid gray;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.divPad{
+    padding: 25px 5px ;
+}
+#main>div:nth-child(1)>div>img{
+    display: block;
+    margin: auto;
+    width: 150px;
+}
+#main>div:nth-child(1)>div>p{
+    margin-top: 20px;
+    color: gray;
+}
+#main>div:nth-child(1)>div:nth-child(3)>ul{
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: -10px;
+}
+#main>div:nth-child(1)>div:nth-child(3)>ul li{
+    text-align: left;
+}
+#main>div:nth-child(1)>div:nth-child(2){
+    margin-top: 30px;
+}
+#main>div:nth-child(1)>div:nth-child(3){
+    padding: 5px;
+    margin-top: 30px;
+}
+#main>div:nth-child(1)>div>p:hover{
+    text-decoration: underline;
+}
+
+/* Right Side */
+.header+h2{
+    font-weight: 200;
+}
+#main>div:nth-child(2){
+    width: 71%;
+    /* border: 1px solid red; */
+}
+.header>p{
+    font-size: 15px;
+}
+.blue{
+    color: #29b6f6;
+}
+.blue:hover{
+    text-decoration: underline;
+}
+.red{
+    color: red;
+    font-style: italic;
+}
+
+
+/* Right Side Form */
+
+
+#signupForm>h3{
+    margin-top: 50px;
+    color: #616161;
+    
+}
+#signupForm>h3+p{
+    margin-top: -15px;
+}
+.yrname{
+    margin-top: 5px;
+}
+tr > * + * {
+    padding-left: 4em;
+}
+.inputTop{
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.inputTop>.inputTop1{
+    display: flex;
+    flex-direction: column;
+}
+.inputTop>.inputTop1>p{
+    margin-top: 1px;
+}
+.inputTop>div{
+    display: flex;
+    flex-direction: column;
+}
+.inputTop>div>p{
+    margin-bottom: 0px;
+}
+.inputAgeTop>div>p{
+   font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.lname{
+    margin-right: 80px;
+}
+.uname{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+}
+/* .belowPassInput{
+    border: 1px solid black;
+} */
+.blueUrl{
+    font-size: 15px;
+    color: #448aff;
+}
+tbody{  
+    border-collapse: collapse;  
+    width: 50%;  
+    margin: auto; 
+}  
+td{
+    margin-top: 20px;
+}
+td:nth-child(1){
+    display: flex;
+    flex-direction: column;
+}
+.inputWidth{
+    width: 500px;
+    height: 30px;
+    border-radius: 5px;
+}
+.borderless{
+    border: 1px solid #e0e0e0;
+    background-color: white;
+}
+.check{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.birthDate{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+.consta{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
+.btn{
+    margin-top: 50px;
+    color: white;
+    background-color: red;
+    border: none;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 5px;
+}

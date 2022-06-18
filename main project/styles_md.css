@@ -1,0 +1,201 @@
+:root{
+    --background:#f0f0f0;
+    --grey1:grey;
+    --grey2:rgb(153, 153, 153);
+    --grey3:gainsboro;
+    --red:rgb(245, 56, 56);
+    --fadeRed:rgb(212, 31, 31);
+    --white:white;
+    --green:rgb(4, 190, 90);
+    --fadeGreen:rgb(0, 157, 72);
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    margin: 20px auto;
+}
+/* common */
+#greyText{
+    color: var(--grey2);
+}
+button{
+    padding: 10px 20px;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 0.5rem;
+}
+/*  */
+
+/* inside container 1st div */
+.container>div:first-child{
+    padding: 10px 0px;
+    padding-bottom: 30px;
+    background-color: var(--background);
+}
+/* inside container first div and inside first div */
+.container>div:first-child>div{
+    width: 80%;
+    margin: auto;            
+}
+h1+p+p>a{
+    text-decoration: none;
+}
+h1+p+p>a:hover{
+    text-decoration: underline;
+}
+.container>div:first-child>div>p+div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container>div:first-child>div>p+div>input,select,button{
+    margin: 5px 10px;
+    padding: 10px 20px;
+    color: var(--grey1);
+    font-size: 15px;
+    border-radius: 0.5rem;
+}
+input,select{
+    background-color: var(--white);
+    border: 1px solid var(--grey3);
+    outline: none;
+}
+select{
+    color: rgba(110, 107, 107, 0.955);
+}
+select+button{
+    color: var(--white);
+    background-color: var(--red);
+}
+select+button:hover{
+    background-color: var(--fadeRed);
+}
+button+button{
+    color: var(--white);
+    background-color: var(--green);
+}
+button+button:hover{
+    background-color: var(--fadeGreen);
+}
+/* 2nd and 3rd div excluding 1st div in container */
+.container>div:first-child~div{
+    width: 80%;
+    margin: 30px auto;
+}
+.container>div:nth-child(2)>img{
+    width: 100%;
+    border: 1px solid var(--grey3);
+}
+/* 2nd div in container which has lists of all cards */
+#coupons{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+}
+/* cards style */
+.cards{
+    border: 1px solid var(--grey3);
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+/* inside cards first div - image + floating text */
+.cards>div:first-child{
+    position: relative;
+}
+.cards>div:first-child>a>img{
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.cards>div:first-child>a>img:hover{
+    cursor: pointer;
+}
+.cards>div:first-child>p:last-child{
+    position: absolute;
+    width: 100%;
+    bottom: 2px;
+    text-align: center;
+    padding: 5px 0px;
+    margin: 0;
+    font-size: 18px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); 
+    color: white;
+}
+/* inside cards 2nd div - dish category + chef name */
+.cards>div:nth-child(2){
+    padding: 0px 10px;
+    padding-bottom: 10px;
+}
+.cards>div:nth-child(2)>p>a{
+    text-decoration: none;
+    color: var(--grey1);
+    font-size: 18px;
+}
+.cards>div:nth-child(2)>p>a:hover{
+    text-decoration: underline;
+}
+.cards>div:nth-child(2)>a>button{
+    margin: 0;
+    color: var(--white);
+    background-color: var(--red);
+}
+.cards>div:nth-child(2)>a>button:hover{
+    background-color: var(--fadeRed);
+}
+/* inside cards 3rd div  */
+.cards>div:last-child{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+.cards>div:last-child>div{
+    text-align: center;
+    padding: 5px 0px;
+    border: 1px solid var(--grey3);
+    border-bottom: 0;            
+}
+.cards>div:last-child>div:first-child{
+    border-left: 0;
+}
+.cards>div:last-child>div:last-child{
+    border-right: 0;
+    border-bottom: 0;
+}
+.cards>div:last-child>div:first-child>img{
+    width: 30px;            
+    margin: 1px;
+}
+.cards>div:last-child>div:nth-child(2)>span:last-child{
+    color: var(--red);
+    font-size: 22px;
+}
+.cards>div:last-child>div:last-child>span:last-child{
+    color: var(--grey1);
+    font-size: 22px;
+}
+/* pages */
+#pages{
+    margin: 0px auto;
+    display: flex;
+    justify-content: left;
+}
+#pages>div{            
+    padding: 10px;
+    margin: 10px;
+}
+#pages>div>a{
+    text-decoration: none;
+    color: #75b6f6;
+}
+.selected{
+    background-color: gainsboro;
+    color: black;
+}
+#pages>.selected>a{
+    color: black;
+}
