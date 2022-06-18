@@ -247,11 +247,6 @@
                   <td>
                     <select id="state" class="consta borderless" >
                       <option value="Select State">Select State</option>
-                      <!-- <option class="ind" value="dl">Delhi</option>
-                      <option class="ind" value="hr">Haryana</option>
-                      <option class="ind" value="mah">Maharshtra</option>
-                      <option class="eng" value="LONDON">London</option>
-                      <option class="eng" value="edge">Edgebaston</option> -->
                     </select>
                   </td>
                 </tr>
@@ -291,38 +286,9 @@
 
   let customerArray = JSON.parse(localStorage.getItem("customerData")) || [];
 
- 
-
-  // var carsAndModels = {};
-  //   carsAndModels['VO'] = ['V70', 'XC60', 'XC90'];
-  //   carsAndModels['VW'] = ['Golf', 'Polo', 'Scirocco', 'Touareg'];
-  //   carsAndModels['BMW'] = ['M6', 'X5', 'Z3'];
-
+  
   let formTag = document.querySelector("form");
 
-  // let cardd = document.querySelector("#car");
-  // function carSelect (e) {
-  //   var carModel = e.target.value;
-  //   var carModelSelect = document.querySelector('#carmodel');
-  //   carModelSelect.innerHTML='';
-  //   carModelSelect.disabled = false;
-  //   var models = carsAndModels[carModel];
-
-  //   if(models && models.length>0){
-  //     models.forEach(function (model) {
-  //     var option = document.createElement("option");
-  //     //option.classList.add("ind")
-  //     option.value = model;
-  //     option.innerText = model;
-  //     carModelSelect.appendChild(option);
-  //   })
-  //   }else{
-  //     carModelSelect.disabled = true;
-  //   }
-    
-
-  // };
-  // cardd.addEventListener("change", carSelect);
 
   function getFoodLoverData(event) {
     event.preventDefault();
@@ -406,6 +372,7 @@
 
     console.log(customerArray);
     localStorage.setItem("customerData", JSON.stringify(customerArray));
+    window.location.href="signupSuccessfulPage.html";
     formTag.reset();
   }
 

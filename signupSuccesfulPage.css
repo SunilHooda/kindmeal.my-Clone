@@ -1,0 +1,98 @@
+/* main Container */
+#main{
+    width: 70%;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: roboto,Arial;
+}
+
+
+/* Left Side */
+#main>div:nth-child(1){
+    width: 25%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+   
+}
+#main>div:nth-child(1)>div{
+    width: 90%;
+    border: 1px solid gray;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+}
+.reduceSpace{
+    margin-bottom: -100px;
+}
+.divPad{
+    padding: 25px 5px ;
+}
+#main>div:nth-child(1)>div>img{
+    display: block;
+    margin: auto;
+    width: 150px;
+}
+#main>div:nth-child(1)>div>p{
+    margin-top: 20px;
+    color: gray;
+}
+#main>div:nth-child(1)>div:nth-child(3)>ul{
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: -10px;
+}
+#main>div:nth-child(1)>div:nth-child(3)>ul li{
+    text-align: left;
+}
+#main>div:nth-child(1)>div:nth-child(2){
+    margin-top: 30px;
+}
+#main>div:nth-child(1)>div:nth-child(3){
+    padding: 5px;
+    margin-top: 30px;
+}
+#main>div:nth-child(1)>div>p:hover{
+    text-decoration: underline;
+}
+
+/* Right Side */
+
+#rightSide{
+    width: 65%;
+    /* border: 1px solid black; */
+}
+#rightSide>div{
+    margin-top: 30px;
+    width: 80%;
+    /* border: 1px solid red; */
+}
+#rightSide>div>div{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid green; */
+}
+#rightSide>div>div>img{
+    width: 100px;
+}
+#rightSide>div>div>p{
+    font-size: 25px;
+}
+.upperMargin{
+    margin-top: 20px;
+}
+.button{
+    background-color: red;
+    color: white;
+    padding: 10px 60px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    margin-top: 40px;
+}
