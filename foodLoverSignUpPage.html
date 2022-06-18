@@ -209,6 +209,15 @@
                           <option value="2009">2009</option>
                           <option value="2008">2008</option>
                           <option value="2007">2007</option>
+                          <option value="2006">2006</option>
+                          <option value="2005">2005</option>
+                          <option value="2004">2004</option>
+                          <option value="2003">2003</option>
+                          <option value="2002">2002</option>
+                          <option value="2001">2001</option>
+                          <option value="2000">2000</option>
+                          <option value="1999">1999</option>
+                          <option value="1998">1998</option>
                         </select>
                       </div>
                     </div>
@@ -217,32 +226,45 @@
                 <tr>
                   <td><label for="">Country</label></td>
                   <td>
-                    <select id="country" class="consta borderless">
+                    <select
+                      id="country"
+                      class="consta borderless"
+                      onchange="populate(id,'state')">
                       <option value="Your Country">Your Country</option>
                       <option value="india">India</option>
-                      <option value="england">england</option>
+                      <option value="dominica">Dominica</option>
+                      <option value="guam">Guam</option>
+                      <option value="iran">Iran</option>
+                      <option value="japan">Japan</option>
+                      <option value="nepal">Nepal</option>
+                      <option value="qatar">Qatar</option>
+                      <option value="sweden">Sweden</option>
                     </select>
                   </td>
                 </tr>
                 <tr>
                   <td><label for="">State</label></td>
                   <td>
-                    <select id="state" class="consta borderless">
+                    <select id="state" class="consta borderless" >
                       <option value="Select State">Select State</option>
-                      <option class="ind" value="dl">Delhi</option>
+                      <!-- <option class="ind" value="dl">Delhi</option>
                       <option class="ind" value="hr">Haryana</option>
                       <option class="ind" value="mah">Maharshtra</option>
                       <option class="eng" value="LONDON">London</option>
-                      <option class="eng" value="edge">Edgebaston</option>
+                      <option class="eng" value="edge">Edgebaston</option> -->
                     </select>
                   </td>
                 </tr>
                 <tr>
                   <td><label for="">Gender</label></td>
                   <td>
-                    <input type="radio" value="Male" id="male" />
+                    <input type="radio" name="gender" value="Male" id="male" />
                     <label for=""> Male</label> &nbsp;&nbsp;
-                    <input type="radio" id="female" value="Female" />
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="female"
+                      value="Female"/>
                     <label for="">Female</label>
                   </td>
                 </tr>
@@ -252,7 +274,7 @@
                 </tr>
               </tbody>
             </table>
-            <input type="checkbox" id="term&cond" class="check" />
+            <input type="checkbox" id="term&cond" class="check" required/>
             <label for="" class="check">
                 I agree to KindMeal.my's Terms & Conditions
             </label>
@@ -271,11 +293,39 @@
 
  
 
+  // var carsAndModels = {};
+  //   carsAndModels['VO'] = ['V70', 'XC60', 'XC90'];
+  //   carsAndModels['VW'] = ['Golf', 'Polo', 'Scirocco', 'Touareg'];
+  //   carsAndModels['BMW'] = ['M6', 'X5', 'Z3'];
+
   let formTag = document.querySelector("form");
+
+  // let cardd = document.querySelector("#car");
+  // function carSelect (e) {
+  //   var carModel = e.target.value;
+  //   var carModelSelect = document.querySelector('#carmodel');
+  //   carModelSelect.innerHTML='';
+  //   carModelSelect.disabled = false;
+  //   var models = carsAndModels[carModel];
+
+  //   if(models && models.length>0){
+  //     models.forEach(function (model) {
+  //     var option = document.createElement("option");
+  //     //option.classList.add("ind")
+  //     option.value = model;
+  //     option.innerText = model;
+  //     carModelSelect.appendChild(option);
+  //   })
+  //   }else{
+  //     carModelSelect.disabled = true;
+  //   }
+    
+
+  // };
+  // cardd.addEventListener("change", carSelect);
 
   function getFoodLoverData(event) {
     event.preventDefault();
-    //console.log("Inside fn");
 
     let customerObject = {
       fname: formTag.firstName.value,
@@ -289,8 +339,7 @@
       year: formTag.year.value,
       country: formTag.country.value,
       state: formTag.state.value,
-      gender: formTag.male.value,
-      gender: formTag.female.value,
+      gender: formTag.gender.value,
       picture: formTag.image.value,
     };
 
@@ -298,14 +347,17 @@
 
     if (customerObject.fname === "") {
       alert("Enter First Name");
+      return false;
     }
 
     if (customerObject.lname === "") {
       alert("Enter Last Name");
+      return false;
     }
 
     if (customerObject.emailId === "") {
       alert("Enter Email - Id");
+      return false;
     }
     if (checkEmail(customerObject.emailId) === true) {
       if (customerObject.emailId === customerObject.reEmail) {
@@ -315,58 +367,47 @@
         alert("Email-Id is incorrect");
       }
 
-      console.log("Okay valid E-mail iD");
+      //console.log("Okay valid E-mail iD");
     } else {
       alert("Enter valid Email-id");
+      return false;
     }
 
     if(customerObject.uname === ""){
         alert("Enter username");
+        return false;
     }
     
     if(customerObject.month === "Month"){
         alert("Select month");
+        return false;
     }
     
     if(customerObject.day === "Day"){
         alert("Select Day");
+        return false;
     }
     if(customerObject.year === "Year"){
         alert("Select Year");
+        return false;
     }
+
     if(customerObject.password.length < 5){
         alert("Your Password shuld be more than 5 letters");
-        formTag.reset();
+       return false;
     }
-    // else{
-    //     console.log(customerArray.length);
-    //     customerArray.length = customerArray.length - 1;
-    //     console.log(customerArray.length);
-    //     //customerArray.push(customerObject);
-    // }
+    
 
 
     if(customerObject.country === "Your Country"){
         alert("Select Country");
-    }
-    
-
-    document.querySelector("#country").addEventListener("change", sortedState);
-    
-    function sortedState(){
-        console.log("Inside fn");
-        let con = document.querySelector("#country").value;
-        console.log(con);
+        return false;
     }
 
-
-    
-    
     console.log(customerArray);
     localStorage.setItem("customerData", JSON.stringify(customerArray));
     formTag.reset();
   }
-
 
     
   function checkEmail(emailId) {
@@ -379,4 +420,37 @@
       return true;
     }
   }
+
+  function populate(s1, s2) {
+    s1 = document.getElementById(s1);
+    s2 = document.getElementById(s2);
+    s2.innerHTML = "";
+    let optionArr = [];
+    if (s1.value == "india") {
+      optionArr = ["delhi|Delhi", "haryana|Haryana", "maharastra|Maharastra","aasam|Aasam","kerala|Kerala"];
+    } else if (s1.value == "dominica") {
+      optionArr = ["saintandrew|Saint Andrew", "saintpaul|SaintPaul","saintluke|Saint Luke","saintmark|Saint Mark","saintjohn|Saint John"];
+    }else if (s1.value == "guam") {
+      optionArr = ["agat|Agat", "barrigada|Barrigada","dededo|Dededo","hagatna|Hagatna","yona|Yona"];
+    }else if (s1.value == "iran") {
+      optionArr = ["esfahan|Esfahan", "fars|Fars","gilan|Gilan","illam|Illam","kerman|Kerman"];
+    }else if (s1.value == "japan") {
+      optionArr = ["aichi|Aichi","akita|Akita","chiba|Chiba","hyogo|Hyogo","iwate|Iwate"];
+    }else if (s1.value == "nepal") {
+      optionArr = ["banke|Banke", "bara|Bara","dailekh|Dailekh","doti|Doti","parsa|Parsa"];
+    }else if (s1.value == "qatar") {
+      optionArr = ["addawhah|ad-Dawhah", "alhawr|al-Hawr","alwakrah|al-Wakrah","ummsalal|Umm Salal","assamal|as-Samal"];
+    }else if (s1.value == "sweden") {
+      optionArr = ["dalarna|Dalarna", "halland|Halland","kalmar|Kalmar","skane|Skane","varmland|Varmland"];
+    }
+    for (option in optionArr) {
+      let pair = optionArr[option].split("|");
+      let newoption = document.createElement("option");
+      newoption.value = pair[0];
+      newoption.innerHTML = pair[1];
+      s2.append(newoption);
+    }
+  }
 </script>
+ 
+

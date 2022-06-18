@@ -205,8 +205,18 @@
                             <tr>
                                 <td><label for="">Country</label></td>
                                 <td>
-                                <select id="country" class="consta borderless" >
+                                <select id="country" class="consta borderless"  onchange="populate(id,'state')">
                                     <option value="Your Country">Your Country</option>
+                                    <option value="Your Country">Your Country</option>
+                                    <option value="india">India</option>
+                                    <option value="dominica">Dominica</option>
+                                    <option value="guam">Guam</option>
+                                    <option value="iran">Iran</option>
+                                    <option value="japan">Japan</option>
+                                     <option value="nepal">Nepal</option>
+                                    <option value="qatar">Qatar</option>
+                                     <option value="sweden">Sweden</option>
+
                                 </select></td>
                             </tr>
                             <tr>
@@ -218,10 +228,12 @@
                             </tr>
                             <tr>
                                 <td><label for="">Gender</label></td>
-                                <td><input type="radio" value="Male" id="gender">
+                                <td>
+                                    <input type="radio" name="gender" value="Male" id="gender">
                                     <label for=""> Male</label> &nbsp;&nbsp;
-                                    <input type="radio" id="gender">
-                                    <label for="">Female</label></td>
+                                    <input type="radio" id="gender" name="gender" value="Female">
+                                    <label for="">Female</label>
+                                </td>
                             </tr>
                             <tr>
                                 <td><label for="">Profile Photo</label></td>
@@ -229,7 +241,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    <input type="checkbox" id="temrm&cond" class="check" >
+                    <input type="checkbox" id="temrm&cond" class="check" required>
                     <label for="" class="check">I agree to KindMeal.my's Terms & Conditions</label>
                     <br>
                     <input type="submit" value="Set Up My Shop & Deals »" class="btn">
@@ -240,3 +252,167 @@
     </div>
 </body>
 </html>
+<script>
+    document.querySelector("form").addEventListener("submit", restaurentOwnerData);
+  
+    let ownerArray = JSON.parse(localStorage.getItem("shopOwnerData")) || [];
+  
+   
+  
+    // var carsAndModels = {};
+    //   carsAndModels['VO'] = ['V70', 'XC60', 'XC90'];
+    //   carsAndModels['VW'] = ['Golf', 'Polo', 'Scirocco', 'Touareg'];
+    //   carsAndModels['BMW'] = ['M6', 'X5', 'Z3'];
+  
+    let formTag = document.querySelector("form");
+  
+    // let cardd = document.querySelector("#car");
+    // function carSelect (e) {
+    //   var carModel = e.target.value;
+    //   var carModelSelect = document.querySelector('#carmodel');
+    //   carModelSelect.innerHTML='';
+    //   carModelSelect.disabled = false;
+    //   var models = carsAndModels[carModel];
+  
+    //   if(models && models.length>0){
+    //     models.forEach(function (model) {
+    //     var option = document.createElement("option");
+    //     //option.classList.add("ind")
+    //     option.value = model;
+    //     option.innerText = model;
+    //     carModelSelect.appendChild(option);
+    //   })
+    //   }else{
+    //     carModelSelect.disabled = true;
+    //   }
+      
+  
+    // };
+    // cardd.addEventListener("change", carSelect);
+  
+    function restaurentOwnerData(event) {
+      event.preventDefault();
+  
+      let ownerObject = {
+        fname: formTag.firstName.value,
+        lname: formTag.lastName.value,
+        emailId: formTag.cEmail.value,
+        reEmail: formTag.reEmail.value,
+        password: formTag.pass.value,
+        uname: formTag.uname.value,
+        month: formTag.month.value,
+        day: formTag.day.value,
+        year: formTag.year.value,
+        country: formTag.country.value,
+        state: formTag.state.value,
+        gender: formTag.gender.value,
+        picture: formTag.image.value,
+      };
+  
+      //console.log(customerObject);
+  
+      if (ownerObject.fname === "") {
+        alert("Enter First Name");
+        return false;
+      }
+  
+      if (ownerObject.lname === "") {
+        alert("Enter Last Name");
+        return false;
+      }
+  
+      if (ownerObject.emailId === "") {
+        alert("Enter Email - Id");
+        return false;
+      }
+      if (checkEmail(ownerObject.emailId) === true) {
+        if (ownerObject.emailId === ownerObject.reEmail) {
+          ownerArray.push(ownerObject);
+          console.log("Both Email Id are same");
+        } else {
+          alert("Email-Id is incorrect");
+        }
+  
+        console.log("Okay valid E-mail iD");
+      } else {
+        alert("Enter valid Email-id");
+        return false;
+      }
+  
+      if(ownerObject.uname === ""){
+          alert("Enter username");
+          return false;
+      }
+      
+      if(ownerObject.month === "Month"){
+          alert("Select month");
+          return false;
+      }
+      
+      if(ownerObject.day === "Day"){
+          alert("Select Day");
+          return false;
+      }
+      if(ownerObject.year === "Year"){
+          alert("Select Year");
+          return false;
+      }
+  
+      if(ownerObject.password.length < 5){
+          alert("Your Password shuld be more than 5 letters");
+         return false;
+      }
+      
+        if(ownerObject.country === "Your Country"){
+          alert("Select Country");
+          return false;
+      }
+  
+      console.log(ownerArray);
+      localStorage.setItem("shopOwnerData", JSON.stringify(ownerArray));
+      formTag.reset();
+    }
+    
+      
+    function checkEmail(emailId) {
+      let filtered = ownerArray.filter(function (element) {
+        return emailId === element.emailId;
+      });
+      if (filtered.length > 0) {
+        return false;
+      } else {
+        return true;
+      }
+    }
+  
+    function populate(s1, s2) {
+      s1 = document.getElementById(s1);
+      s2 = document.getElementById(s2);
+      s2.innerHTML = "";
+      let optionArr = [];
+      if (s1.value == "india") {
+        optionArr = ["delhi|Delhi", "haryana|Haryana", "maharastra|Maharastra","aasam|Aasam","kerala|Kerala"];
+      } else if (s1.value == "dominica") {
+        optionArr = ["saintandrew|Saint Andrew", "saintpaul|SaintPaul","saintluke|Saint Luke","saintmark|Saint Mark","saintjohn|Saint John"];
+      }else if (s1.value == "guam") {
+        optionArr = ["agat|Agat", "barrigada|Barrigada","dededo|Dededo","hagatna|Hagatna","yona|Yona"];
+      }else if (s1.value == "iran") {
+        optionArr = ["esfahan|Esfahan", "fars|Fars","gilan|Gilan","illam|Illam","kerman|Kerman"];
+      }else if (s1.value == "japan") {
+        optionArr = ["aichi|Aichi","akita|Akita","chiba|Chiba","hyogo|Hyogo","iwate|Iwate"];
+      }else if (s1.value == "nepal") {
+        optionArr = ["banke|Banke", "bara|Bara","dailekh|Dailekh","doti|Doti","parsa|Parsa"];
+      }else if (s1.value == "qatar") {
+        optionArr = ["addawhah|ad-Dawhah", "alhawr|al-Hawr","alwakrah|al-Wakrah","ummsalal|Umm Salal","assamal|as-Samal"];
+      }else if (s1.value == "sweden") {
+        optionArr = ["dalarna|Dalarna", "halland|Halland","kalmar|Kalmar","skane|Skane","varmland|Varmland"];
+      }
+      for (option in optionArr) {
+        let pair = optionArr[option].split("|");
+        let newoption = document.createElement("option");
+        newoption.value = pair[0];
+        newoption.innerHTML = pair[1];
+        s2.append(newoption);
+      }
+    }
+  </script>
