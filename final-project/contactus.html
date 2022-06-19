@@ -4,38 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="stylesheet" href="index.css" />
-    <style>
-      #contactUs {
-        border: 0px solid red;
-        width: 62%;
-        text-align: center;
-        padding: 5px;
-        margin: auto;
-        color: rgb(82, 73, 73);
-        font-size: 110%;
-        font-weight: 50;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
-          rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        padding: 20px 0px;
-      }
-      table {
-        margin-left: 100px;
-      }
-      table td {
-        padding: 10px;
-      }
-      #conbtn {
-        color: aliceblue;
-        background-color: red;
-        padding: 12px 28px;
-        font-size: large;
-        border-radius: 10px;
-      }
-    </style>
+    <title>Contact Us</title>
   </head>
-
+  <style>
+    #div {
+      border: 0px solid red;
+      width: 62%;
+      text-align: center;
+      padding: 5px;
+      margin: auto;
+      color: rgb(82, 73, 73);
+      font-size: 110%;
+      font-weight: 50;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+    #table {
+      margin-left: 100px;
+    }
+    #button {
+      color: white;
+      background-color: red;
+      padding: 12px 28px;
+      font-size: large;
+      border-radius: 10px;
+    }
+  </style>
   <body>
     <!-- navbar -->
 
@@ -66,8 +61,8 @@
       <div>
         <p>Login</p>
         <button id="fbBtn">Facebook</button>
-        <button id="emailBtn">Email</button>
-        <p>Sign Up</p>
+        <button id="emailBtn"><a href="email.html">Email</a></button>
+        <p><a style="color: black" href="signUpPage.html">Sign Up</a></p>
       </div>
     </div>
     <div id="navbar2">
@@ -77,14 +72,14 @@
         </div>
         <div><a href="mealDeals.html">Meal Deals</a></div>
         <div><a href="kindmoments.html">KindMoments</a></div>
-        <div>Hot Picks</div>
-        <div>Recipe</div>
-        <div>Directory</div>
-        <div><a href="./article/article.html">Articles</a></div>
-        <div>Help</div>
+        <div><a href="recipe1.html">Recipe</a></div>
+        <div><a href="directoryveg.html">Directory</a></div>
+        <div><a href="article.html">Articles</a></div>
+        <div><a href="helppage.html">Help</a></div>
       </div>
     </div>
-    <div id="contactUs">
+
+    <div id="div">
       <div>
         <h1>Contact KindMeal.my</h1>
         <p>
@@ -92,7 +87,7 @@
           tell us more about it. We'd love to hear from you!
         </p>
       </div>
-      <table>
+      <table id="table">
         <tr>
           <td>
             <h3>Name</h3>
@@ -158,28 +153,29 @@
           </td>
         </tr>
       </table>
-      <button id="conbtn">Send Message</button>
+      <button id="button">Send Message</button>
     </div>
+
     <!-- footer code -->
     <footer id="footer">
       <div id="maincontainer">
         <div class="insidediv">
           <h4>General</h4>
           <p><a href="index.html">Home</a></p>
-          <p><a href="">Sign Up</a></p>
-          <p><a href="">Restaurateurs</a></p>
-          <p><a href="">AboutKindMeal.my</a></p>
-          <p><a href="">Help & FAQ</a></p>
-          <p><a href="">Contact Us</a></p>
+          <p><a href="signUpPage.html">Sign Up</a></p>
+          <p><a href="featured.html">Restaurateurs</a></p>
+          <p><a href="index.html">AboutKindMeal.my</a></p>
+          <p><a href="helppage.html">Help & FAQ</a></p>
+          <p><a href="contactus.html">Contact Us</a></p>
         </div>
         <div class="insidediv">
           <h4>Features</h4>
-          <p><a href="">Meat-Free Deals</a></p>
-          <p><a href="">Tasty Menus</a></p>
-          <p><a href="">Kind Moments</a></p>
-          <p><a href="">Meat-Free Recipes</a></p>
-          <p><a href="">Featured Restaurants</a></p>
-          <p><a href="">Vegetarian & Vegan Directory</a></p>
+          <p><a href="meal_deals.html">Meat-Free Deals</a></p>
+          <p><a href="foodmenu.html">Tasty Menus</a></p>
+          <p><a href="kindmoments.html">Kind Moments</a></p>
+          <p><a href="recipe1.html">Meat-Free Recipes</a></p>
+          <p><a href="featured.html">Featured Restaurants</a></p>
+          <p><a href="directoryveg.html">Vegetarian & Vegan Directory</a></p>
         </div>
         <div class="insidediv">
           <h4>Social Media</h4>

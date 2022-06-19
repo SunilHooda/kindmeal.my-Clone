@@ -4,227 +4,235 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
     <style>
-      a {
-        text-decoration: none;
+      #container {
+        display: flex;
       }
       #text {
-        /* border: 4px solid red; */
+        border: 0px solid red;
         width: 65%;
         padding: 5px 20px;
         margin-left: 50px;
         box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
           rgba(0, 0, 0, 0.24) 0px 1px 2px;
       }
-      #text h1,
-      p {
-        padding: 10px 0px;
+      #text > h1 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 26px;
       }
-
-      #help {
-        display: flex;
-        justify-content: center;
-
-        /* border: 5px solid orange; */
-        margin: auto;
+      #text > p {
+        margin-bottom: 10px;
       }
-      .boxes1 > img {
-        width: 100%;
+      #boxes {
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+          rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        /* margin-top: 60px; */
+        /* height: 225px; */
+        width: 190px;
+        margin-left: 100px;
+        margin-bottom: 50px;
+        padding: 20px;
+        text-align: center;
+      }
+      #boxes > img {
+        width: 60%;
+        height: 100px;
+      }
+      #boxes > a > img {
+        width: 60%;
+        height: 100px;
       }
     </style>
   </head>
 
-  <html>
-    <body>
-      <!-- navbar -->
+  <body>
+    <!-- navbar -->
 
-      <div id="navbar1">
-        <div>
+    <div id="navbar1">
+      <div>
+        <img
+          src="https://www.kindmeal.my/images/logo-kindmeal.png"
+          alt="Error"
+        />
+      </div>
+      <div>
+        <a href="https://www.kindmeal.my/widget.htm" target="_blank">
           <img
-            src="https://www.kindmeal.my/images/logo-kindmeal.png"
+            src="https://www.kindmeal.my/images/follow_blog_grey.png"
             alt="Error"
+        /></a>
+        <a href="https://www.facebook.com/KindMeal.my" target="_blank">
+          <img
+            src="https://www.kindmeal.my/images/follow_facebook_grey.png"
+            alt="Error"
+        /></a>
+        <a href="https://twitter.com/KindMeal" target="_blank"
+          ><img
+            src="https://www.kindmeal.my/images/follow_twitter_grey.png"
+            alt="Error"
+        /></a>
+      </div>
+      <div>
+        <p>Login</p>
+        <button id="fbBtn">Facebook</button>
+        <button id="emailBtn"><a href="email.html">Email</a></button>
+        <p><a style="color: black" href="signUpPage.html">Sign Up</a></p>
+      </div>
+    </div>
+    <div id="navbar2">
+      <div id="buttons">
+        <div>
+          <span><a href="index.html">Home</a></span>
+        </div>
+        <div><a href="mealDeals.html">Meal Deals</a></div>
+        <div><a href="kindmoments.html">KindMoments</a></div>
+        <div><a href="recipe1.html">Recipe</a></div>
+        <div><a href="directoryveg.html">Directory</a></div>
+        <div><a href="article.html">Articles</a></div>
+        <div><a href="helppage.html">Help</a></div>
+      </div>
+    </div>
+
+    <div id="container">
+      <div>
+        <div id="boxes">
+          <img src="https://www.kindmeal.my/images/join_normal.png" alt="" />
+          <h3>General Help</h3>
+        </div>
+        <div id="boxes">
+          <img src="https://www.kindmeal.my/images/join_shop.png" alt="" />
+          <h3>Merchant Help</h3>
+        </div>
+        <div id="boxes">
+          <img
+            src=" https://www.kindmeal.my/images/icon-megaphone.png"
+            alt=""
           />
+          <h3>Advertising</h3>
         </div>
-        <div>
-          <a href="https://www.kindmeal.my/widget.htm" target="_blank">
-            <img
-              src="https://www.kindmeal.my/images/follow_blog_grey.png"
-              alt="Error"
-          /></a>
-          <a href="https://www.facebook.com/KindMeal.my" target="_blank">
-            <img
-              src="https://www.kindmeal.my/images/follow_facebook_grey.png"
-              alt="Error"
-          /></a>
-          <a href="https://twitter.com/KindMeal" target="_blank"
-            ><img
-              src="https://www.kindmeal.my/images/follow_twitter_grey.png"
-              alt="Error"
-          /></a>
+        <div id="boxes">
+          <img src="https://www.kindmeal.my/images/about_us.png" alt="" />
+          <h3>About KindMeal</h3>
         </div>
-        <div>
-          <p>Login</p>
-          <button id="fbBtn">Facebook</button>
-          <button id="emailBtn">Email</button>
-          <p><a href="signUpPage.html">Sign Up</a></p>
+        <div id="boxes">
+          <img src="https://www.kindmeal.my/images/about_hero.png" alt="" />
+          <h3>Superhero Guide</h3>
+        </div>
+        <div id="boxes">
+          <a href="contactus.html">
+            <img src="https://www.kindmeal.my/images/contact.png" alt=""
+          /></a>
+          <h3>Contact Us</h3>
         </div>
       </div>
-
-      <div id="navbar2">
-        <div id="buttons">
-          <div>
-            <span><a href="index.html">Home</a></span>
-          </div>
-          <div><a href="mealDeals.html">Meal Deals</a></div>
-          <div><a href="kindmoments.html">KindMoments</a></div>
-          <div>Hot Picks</div>
-          <div><a href="recipe1.html">Recipe</a></div>
-          <div>Directory</div>
-          <div><a href="./article/article.html">Articles</a></div>
-          <div><a href="helppage.html">Help</a></div>
-        </div>
-      </div>
-
-      <!-- 
-                help -->
-
-      <div id="help">
-        <div id="container-help">
-          <div class="boxes1">
-            <img src="https://www.kindmeal.my/images/join_normal.png" alt="" />
-            <h3>General Help</h3>
-          </div>
-          <div class="boxes1">
-            <img src="https://www.kindmeal.my/images/join_shop.png" alt="" />
-            <h3>Merchant Help</h3>
-          </div>
-          <div class="boxes1">
-            <img
-              src=" https://www.kindmeal.my/images/icon-megaphone.png"
-              alt=""
-            />
-            <h3>Advertising</h3>
-          </div>
-          <div class="boxes1">
-            <img src="https://www.kindmeal.my/images/about_us.png" alt="" />
-            <h3>About KindMeal</h3>
-          </div>
-          <div class="boxes1">
-            <img src="https://www.kindmeal.my/images/about_hero.png" alt="" />
-            <h3>Superhero Guide</h3>
-          </div>
-          <div class="boxes1">
-            <img src="https://www.kindmeal.my/images/contact.png" alt="" />
-            <h3>Contact Us</h3>
-          </div>
-        </div>
-        <div id="text">
-          <h1>General Help</h1>
-          <p>
-            Wish to find out more on how to use KindMeal? Please check out our
-            frequently-asked questions below. If you are unable to find your
-            answer here, please contact us for further assistance.
-          </p>
-          <br />
-          <br />
-          <hr />
-          <br /><br />
-          <h1>What is KindMeal?</h1>
-          <p>
-            KindMeal is Malaysia's (and possibly the world's!) pioneering
-            meat-free lifestyle platform. We provide an effective platform to
-            promote compassionate dining in a fun and effective way, that would
-            allow you to save precious animal lives, improve your health, enjoy
-            a cleaner environment and of course, save your hard-earned money.
-          </p>
-          <h1>What is Meat-Free?</h1>
-          <p>
-            Meat-free means that the food does not contain any meat, or
-            ingredients derived from meat. However, it may contain some elements
-            that people of certain diet do not consume, such as eggs, dairy /
-            milk, or alcohol. Please refer to the details within each specific
-            shop / deal for further information.
-          </p>
-
-          <h1>How do I sign up to KindMeal? Is it free?</h1>
-          <p>
-            Yes, it is absolutely free. To join our community of food lovers and
-            grab awesome deals, please sign up here. If you are a merchant that
-            wish to promote your business for FREE, please proceed to our
-            Businesses Page.
-          </p>
-          <h1>What is a Username?</h1>
-          <p>
-            A Username is a nickname exclusively used to identify your profile.
-            It will be used to access your Public Page, such as
-            https://KindMeal.my/MyUsername, and it will also be displayed when
-            you share KindMoments, comments and reviews.
-          </p>
-
-          <h1>How do KindMeal deals work?</h1>
-          <p>
-            Restaurants create attractive deals within KindMeal, which you can
-            obtain coupons for. Our coupons differ from other conventional deal
-            sites in that you do not need to make any upfront payment at
-            KindMeal, and you can easily present our LiveCoupon via computer,
-            mobile or laptop without any print coupons. For restaurants that do
-            not require advance reservations, you can even use the LiveCoupon
-            immediately! After all, eating is an impulsive decision, right?
-          </p>
-          <h1>How do I get a KindMeal coupon?</h1>
-
-          <p>
-            Just browse to a deal you like, select the corresponding outlet
-            location (if the restaurant has multiple locations), then click on
-            Get Coupon. Please note that the outlet location cannot be changed
-            after the coupon is obtained.
-
-            <br /><br />Each member is limited to 5 active coupons only. You
-            must use the coupons before you can obtain additional ones. Unused
-            coupons will automatically expire upon reaching its due date.
-          </p>
-        </div>
-      </div>
-      <!-- footer code -->
-      <footer id="footer">
-        <div id="maincontainer">
-          <div class="insidediv">
-            <h4>General</h4>
-            <p><a href="index.html">Home</a></p>
-            <p><a href="">Sign Up</a></p>
-            <p><a href="">Restaurateurs</a></p>
-            <p><a href="">AboutKindMeal.my</a></p>
-            <p><a href="">Help & FAQ</a></p>
-            <p><a href="">Contact Us</a></p>
-          </div>
-          <div class="insidediv">
-            <h4>Features</h4>
-            <p><a href="">Meat-Free Deals</a></p>
-            <p><a href="">Tasty Menus</a></p>
-            <p><a href="">Kind Moments</a></p>
-            <p><a href="">Meat-Free Recipes</a></p>
-            <p><a href="">Featured Restaurants</a></p>
-            <p><a href="">Vegetarian & Vegan Directory</a></p>
-          </div>
-          <div class="insidediv">
-            <h4>Social Media</h4>
-            <p>
-              <a href="https://www.kindmeal.my/widget.htm">KindMeal Widget</a>
-            </p>
-            <p><a href="https://www.facebook.com/KindMeal.my">Facebook</a></p>
-            <p><a href="https://twitter.com/KindMeal">Twitter</a></p>
-            <p><a href="http://instagram.com/KindMeal.my">Instagram</a></p>
-          </div>
-        </div>
-        <p>Copyright © KindMeal.my, 2014 - 2022. All rights reserved.</p>
+      <div id="text">
+        <h1>General Help</h1>
         <p>
-          This website promotes compassionate, meat-free dining experience. Some
-          food may contain eggs, dairy products or alcohol, please view
-          individual listings for details.
+          Wish to find out more on how to use KindMeal? Please check out our
+          frequently-asked questions below. If you are unable to find your
+          answer here, please contact us for further assistance.
         </p>
-      </footer>
-    </body>
-  </html>
+        <br />
+        <br />
+        <hr />
+        <br /><br />
+        <h1>What is KindMeal?</h1>
+        <p>
+          KindMeal is Malaysia's (and possibly the world's!) pioneering
+          meat-free lifestyle platform. We provide an effective platform to
+          promote compassionate dining in a fun and effective way, that would
+          allow you to save precious animal lives, improve your health, enjoy a
+          cleaner environment and of course, save your hard-earned money.
+        </p>
+        <h1>What is Meat-Free?</h1>
+        <p>
+          Meat-free means that the food does not contain any meat, or
+          ingredients derived from meat. However, it may contain some elements
+          that people of certain diet do not consume, such as eggs, dairy /
+          milk, or alcohol. Please refer to the details within each specific
+          shop / deal for further information.
+        </p>
+
+        <h1>How do I sign up to KindMeal? Is it free?</h1>
+        <p>
+          Yes, it is absolutely free. To join our community of food lovers and
+          grab awesome deals, please sign up here. If you are a merchant that
+          wish to promote your business for FREE, please proceed to our
+          Businesses Page.
+        </p>
+        <h1>What is a Username?</h1>
+        <p>
+          A Username is a nickname exclusively used to identify your profile. It
+          will be used to access your Public Page, such as
+          https://KindMeal.my/MyUsername, and it will also be displayed when you
+          share KindMoments, comments and reviews.
+        </p>
+
+        <h1>How do KindMeal deals work?</h1>
+        <p>
+          Restaurants create attractive deals within KindMeal, which you can
+          obtain coupons for. Our coupons differ from other conventional deal
+          sites in that you do not need to make any upfront payment at KindMeal,
+          and you can easily present our LiveCoupon via computer, mobile or
+          laptop without any print coupons. For restaurants that do not require
+          advance reservations, you can even use the LiveCoupon immediately!
+          After all, eating is an impulsive decision, right?
+        </p>
+        <h1>How do I get a KindMeal coupon?</h1>
+
+        <p>
+          Just browse to a deal you like, select the corresponding outlet
+          location (if the restaurant has multiple locations), then click on Get
+          Coupon. Please note that the outlet location cannot be changed after
+          the coupon is obtained.
+
+          <br /><br />Each member is limited to 5 active coupons only. You must
+          use the coupons before you can obtain additional ones. Unused coupons
+          will automatically expire upon reaching its due date.
+        </p>
+      </div>
+    </div>
+
+    <!-- footer code -->
+    <footer id="footer">
+      <div id="maincontainer">
+        <div class="insidediv">
+          <h4>General</h4>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="signUpPage.html">Sign Up</a></p>
+          <p><a href="featured.html">Restaurateurs</a></p>
+          <p><a href="index.html">AboutKindMeal.my</a></p>
+          <p><a href="helppage.html">Help & FAQ</a></p>
+          <p><a href="contactus.html">Contact Us</a></p>
+        </div>
+        <div class="insidediv">
+          <h4>Features</h4>
+          <p><a href="meal_deals.html">Meat-Free Deals</a></p>
+          <p><a href="foodmenu.html">Tasty Menus</a></p>
+          <p><a href="kindmoments.html">Kind Moments</a></p>
+          <p><a href="recipe1.html">Meat-Free Recipes</a></p>
+          <p><a href="featured.html">Featured Restaurants</a></p>
+          <p><a href="directoryveg.html">Vegetarian & Vegan Directory</a></p>
+        </div>
+        <div class="insidediv">
+          <h4>Social Media</h4>
+          <p>
+            <a href="https://www.kindmeal.my/widget.htm">KindMeal Widget</a>
+          </p>
+          <p><a href="https://www.facebook.com/KindMeal.my">Facebook</a></p>
+          <p><a href="https://twitter.com/KindMeal">Twitter</a></p>
+          <p><a href="http://instagram.com/KindMeal.my">Instagram</a></p>
+        </div>
+      </div>
+      <p>Copyright © KindMeal.my, 2014 - 2022. All rights reserved.</p>
+      <p>
+        This website promotes compassionate, meat-free dining experience. Some
+        food may contain eggs, dairy products or alcohol, please view individual
+        listings for details.
+      </p>
+    </footer>
+  </body>
 </html>

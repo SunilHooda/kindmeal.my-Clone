@@ -1,578 +1,804 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>body{
-    margin: auto;
-}
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasty Recipes</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      body {
+        margin: auto;
+      }
 
-    #front{
+      #front {
         background-color: rgb(219, 209, 209);
         padding: 5px;
-       border: 0px solid red;
-       
-        
-    
-    }
-    #front>div{
+        border: 0px solid red;
+      }
+      #front > div {
         margin-left: 75px;
-        
-     
-    }
-    #front>div>input,select,button{
+      }
+      #front > div > input,
+      select,
+      button {
         padding: 5px 20px;
         margin: 10px;
         border-radius: 6px;
-        
-     
-    }
-   #greyText{
-    color: grey;
-    }
-    #button1{
-      background-color: red ;
-      color: aliceblue;
-      border: none;
-    }
-    #button2{
-      background-color: rgb(0, 255, 85) ;
-      color: aliceblue;
-      border: none;
-    }
-    #catagory{
+      }
+      #greyText {
+        color: grey;
+      }
+      #button1 {
+        background-color: red;
+        color: aliceblue;
+        border: none;
+      }
+      #button2 {
+        background-color: rgb(0, 255, 85);
+        color: aliceblue;
+        border: none;
+      }
+      #catagory {
         margin-top: 10px;
         display: grid;
-        grid-template-columns: repeat(6,150px);
-        grid-template-rows: repeat(2,45px);
-        border: 0px solid red; 
+        grid-template-columns: repeat(6, 150px);
+        grid-template-rows: repeat(2, 45px);
+        border: 0px solid red;
         gap: 20px;
         margin-left: 90px;
-        
-  
-    }
-    #catagory>div{
-        
+      }
+      #catagory > div {
         display: grid;
         /* grid-template-columns: repeat(6,150px);
-        grid-template-rows: repeat(2,45px); */
-        border: 1px solid rgb(12, 12, 12); 
+            grid-template-rows: repeat(2,45px); */
+        border: 1px solid rgb(12, 12, 12);
         text-align: center;
         border-radius: 6px;
-        
-    }
+        padding-top: 12px;
+      }
 
+      /* #catagory>div{
+          
+            border: 0px solid red; 
+            margin: auto;
+            gap:50px;
+             padding: 10px;
+        }  */
 
-    /* #catagory>div{
-      
-        border: 0px solid red; 
-        margin: auto;
-        gap:50px;
-         padding: 10px;
-    }  */
-
-    #reciperow{
+      #reciperow {
         display: flex;
-        grid-template-rows: repeat(1,80px);
-    grid-template-columns: repeat(3,100px);
-    gap:25px;
-    margin-left: 89px;
-    }
-#recipe{
-    margin-top: 10px;
-    border: 0px solid rgb(26, 211, 118);
-    border-radius: 10px;
-    display: grid;
-   
-    width: 30%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        grid-template-rows: repeat(1, 80px);
+        grid-template-columns: repeat(3, 100px);
+        gap: 25px;
+        margin-left: 89px;
+      }
+      #recipe {
+        margin-top: 10px;
+        border: 0px solid rgb(26, 211, 118);
+        border-radius: 10px;
+        display: grid;
 
-}
+        width: 30%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+          rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      }
 
-#first{
-    border: 0px solid red;
-    display: flex;
-    grid-template-rows: repeat(1,80px);
-    grid-template-columns: repeat(3,100px);
-    justify-content: space-between;
+      #first {
+        border: 0px solid red;
+        display: flex;
+        grid-template-rows: repeat(1, 80px);
+        grid-template-columns: repeat(3, 100px);
+        justify-content: space-between;
+      }
+      #first > img {
+        height: 45px;
+        border-radius: 50%;
+      }
+      #first > button {
+        height: 30px;
+        width: 20%;
+        border-radius: 5px;
+        border: 1px solid red;
+        background-color: red;
+        color: aliceblue;
+        margin-top: 10px;
+      }
 
-}
-#first>img{
-    height:45px;
-    border-radius: 50%;
-}
-#first>button{
-    height:30px;
-    width: 20%;
-    border-radius: 5px;
-    border: 1px solid red ;
-    background-color: red;
-    color: aliceblue;
-    margin-top: 10px;
-}
-
-#second>img{
-    height: 280px;
-    width:100%;
-   position: relative;
-}
- /* .float{
+      #second > img {
+        height: 280px;
+        width: 100%;
+        position: relative;
+      }
+      /* .float{
+        
+        position: absolute;
+                width: 29.5%;
+                bottom: -38px;
+                text-align: center;
+                padding: 7px 0px;
+                margin: 0;
+                font-size: 18px;
+                background: rgb(0, 0, 0);
+                background: rgba(0, 0, 0, 0.5); 
+                color: white;
     
-    position: absolute;
-            width: 29.5%;
-            bottom: -38px;
-            text-align: center;
-            padding: 7px 0px;
-            margin: 0;
-            font-size: 18px;
-            background: rgb(0, 0, 0);
-            background: rgba(0, 0, 0, 0.5); 
-            color: white;
+    }  */
+      #third {
+        border: 0px solid red;
+        display: flex;
+        grid-template-rows: repeat(1, 80px);
+        grid-template-columns: repeat(2, 80px);
+        justify-content: space-between;
+      }
+      #third > div {
+        border: 0px solid rgb(5, 1, 1);
+        display: flex;
+        /* grid-template-rows: repeat(1,80px);
+        grid-template-columns: repeat(2,80px); */
+        justify-content: space-between;
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      #third > div > img {
+        height: 30px;
+        justify-content: baseline;
+        text-align: center;
+      }
+      #middle {
+        margin-top: 10px;
+        margin-left: 125px;
+      }
+      #pages {
+        margin: 0px auto;
+        display: flex;
+        justify-content: left;
+      }
+      #pages > div {
+        padding: 10px;
+        margin: 10px;
+      }
+      #pages > div > a {
+        text-decoration: none;
+        color: #75b6f6;
+      }
+      .selected {
+        background-color: gainsboro;
+        color: black;
+      }
+      #pages > .selected > a {
+        color: black;
+      }
+    </style>
+  </head>
 
-}  */
-#third{
-    border: 0px solid red;
-    display: flex;
-    grid-template-rows: repeat(1,80px);
-    grid-template-columns: repeat(2,80px);
-    justify-content: space-between;
- 
+  <body>
+    <!-- navbar -->
 
-}
-#third>div{
-    border: 0px solid rgb(5, 1, 1);
-    display: flex;
-    /* grid-template-rows: repeat(1,80px);
-    grid-template-columns: repeat(2,80px); */
-    justify-content: space-between;
-    width: 30%;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
- 
+    <div id="navbar1">
+      <div>
+        <img
+          src="https://www.kindmeal.my/images/logo-kindmeal.png"
+          alt="Error"
+        />
+      </div>
+      <div>
+        <a href="https://www.kindmeal.my/widget.htm" target="_blank">
+          <img
+            src="https://www.kindmeal.my/images/follow_blog_grey.png"
+            alt="Error"
+        /></a>
+        <a href="https://www.facebook.com/KindMeal.my" target="_blank">
+          <img
+            src="https://www.kindmeal.my/images/follow_facebook_grey.png"
+            alt="Error"
+        /></a>
+        <a href="https://twitter.com/KindMeal" target="_blank"
+          ><img
+            src="https://www.kindmeal.my/images/follow_twitter_grey.png"
+            alt="Error"
+        /></a>
+      </div>
+      <div>
+        <p>Login</p>
+        <button id="fbBtn">Facebook</button>
+        <button id="emailBtn"><a href="email.html">Email</a></button>
+        <p><a style="color: black" href="signUpPage.html">Sign Up</a></p>
+      </div>
+    </div>
+    <div id="navbar2">
+      <div id="buttons">
+        <div>
+          <span><a href="index.html">Home</a></span>
+        </div>
+        <div><a href="mealDeals.html">Meal Deals</a></div>
+        <div><a href="kindmoments.html">KindMoments</a></div>
+        <div><a href="recipe1.html">Recipe</a></div>
+        <div><a href="directoryveg.html">Directory</a></div>
+        <div><a href="article.html">Articles</a></div>
+        <div><a href="helppage.html">Help</a></div>
+      </div>
+    </div>
 
-}
-#third>div>img{
-    height:30px;
-    justify-content:baseline;
-    text-align: center;
-  
-}
-#middle{
-    margin-top: 10px;
-    margin-left: 125px ;
-}
-#pages{
-    margin: 0px auto;
-    display: flex;
-    justify-content: left;
-}
-#pages>div{            
-    padding: 10px;
-    margin: 10px;
-}
-#pages>div>a{
-    text-decoration: none;
-    color: #75b6f6;
-}
-.selected{
-    background-color: gainsboro;
-    color: black;
-}
-#pages>.selected>a{
-    color: black;
-}
-</style>
-<body>
     <div id="front">
-   <div>
-    <h1>Food & Drinks   <span id="greyText">&nbsp;|&nbsp;    Yummy Meat-Free Recipes </span></h1>
-    
-    <p>Want to craft your own creative meat-free meals? Get inspiration from other food lovers, or share your own masterpieces!</p>
-    <p>Transform into a master chef now.</p> 
-    <input type="text" placeholder="Search Recipe or User Name">  
-  <select name="" id="">
-    <option value="All Categories">All Categories</option> 
-    <option value="Appetizers">Appetizers</option> 
-    <option value="Beverages">Beverages</option> 
-    <option value="Breakfast">Breakfast</option> 
-    <option value="Breads">Breads</option> 
-    <option value="Condiments">Condiments</option> 
-    <option value="Desserts">Desserts</option> 
-    <option value="Snacks">Snacks</option> 
-    <option value="Main Dishes">Main Dishes</option> 
-    <option value="Salads">Salads</option> 
-    <option value="Side Dishes">Side Dishes</option> 
-  </select>
-  <button id="button1">Search Recipes</button>
-  <button id="button2">Share My Recipe</button>
-</div> 
-</div>
-<div id="catagory">
-<div><p>All Categories</p></div>
-<div><p>Appetizers</p></div>
-<div><p>Beverages</p></div>
-<div><p>Breakfast</p></div>
-<div><p>Breads</p></div>
-<div><p>Condiments</p></div>
-<div><p>Desserts</p></div>
-<div><p>Snacks</p></div>
-<div><p>Main Dishes</p></div>
-<div id="Saladsbtn"><p>Salads</p></div>
-<div><p>Side Dishes</p></div>
-<div><p>Soups</p></div>
-</div>
+      <div>
+        <h1>
+          Food & Drinks
+          <span id="greyText">&nbsp;|&nbsp; Yummy Meat-Free Recipes </span>
+        </h1>
 
+        <p>
+          Want to craft your own creative meat-free meals? Get inspiration from
+          other food lovers, or share your own masterpieces!
+        </p>
+        <p>Transform into a master chef now.</p>
+        <input type="text" placeholder="Search Recipe or User Name" />
+        <select name="" id="">
+          <option value="All Categories">All Categories</option>
+          <option value="Appetizers">Appetizers</option>
+          <option value="Beverages">Beverages</option>
+          <option value="Breakfast">Breakfast</option>
+          <option value="Breads">Breads</option>
+          <option value="Condiments">Condiments</option>
+          <option value="Desserts">Desserts</option>
+          <option value="Snacks">Snacks</option>
+          <option value="Main Dishes">Main Dishes</option>
+          <option value="Salads">Salads</option>
+          <option value="Side Dishes">Side Dishes</option>
+        </select>
+        <button id="button1">Search Recipes</button>
+        <button id="button2">Share My Recipe</button>
+      </div>
+    </div>
+    <div id="catagory">
+      <div><p>All Categories</p></div>
+      <div><p>Appetizers</p></div>
+      <div><p>Beverages</p></div>
+      <div><p>Breakfast</p></div>
+      <div><p>Breads</p></div>
+      <div><p>Condiments</p></div>
+      <div><p>Desserts</p></div>
+      <div><p>Snacks</p></div>
+      <div><p>Main Dishes</p></div>
+      <div id="Saladsbtn"><p>Salads</p></div>
+      <div><p>Side Dishes</p></div>
+      <div><p>Soups</p></div>
+    </div>
 
-<div id="reciperow">
-
-    <div id="recipe" class="Salads">
+    <div id="reciperow">
+      <div id="recipe" class="Salads">
         <div id="first">
-            <img src="https://www.kindmeal.my/photos/member/20/20322-s.jpg" alt="">
-            <p>Janelle</p>
-            <button>View</button>
+          <img
+            src="https://www.kindmeal.my/photos/member/20/20322-s.jpg"
+            alt=""
+          />
+          <p>Janelle</p>
+          <button>View</button>
         </div>
         <div id="second">
-
-            <img src="https://www.kindmeal.my/photos/recipe/107/107839-16311-m.jpg" alt="">
-            <!-- <p class="float">kiwi</p> -->
+          <img
+            src="https://www.kindmeal.my/photos/recipe/107/107839-16311-m.jpg"
+            alt=""
+          />
+          <!-- <p class="float">kiwi</p> -->
         </div>
         <div id="third">
-          <div >
-            <img src="https://www.kindmeal.my/images/icon_time_small.png" alt="">
+          <div>
+            <img
+              src="https://www.kindmeal.my/images/icon_time_small.png"
+              alt=""
+            />
             <p>43 Mins</p>
           </div>
 
-           <div> <img src="https://www.kindmeal.my/images/icon_heart_small.png" alt="">
+          <div>
+            <img
+              src="https://www.kindmeal.my/images/icon_heart_small.png"
+              alt=""
+            />
             <p>3</p>
-            <img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="">
+            <img
+              src="https://www.kindmeal.my/images/icon_commentbubble_small.png"
+              alt=""
+            />
             <p>7</p>
+          </div>
         </div>
-        </div>
-    </div>
+      </div>
 
-
-
-    <div id="recipe">
+      <div id="recipe">
         <div id="first">
-            <img src="https://www.kindmeal.my/photos/member/11/11401-s.jpg" alt="">
-            <p>BluePenguin</p>
-            <button>View</button>
+          <img
+            src="https://www.kindmeal.my/photos/member/11/11401-s.jpg"
+            alt=""
+          />
+          <p>BluePenguin</p>
+          <button>View</button>
         </div>
         <div id="second">
-
-            <img src="https://www.kindmeal.my/photos/recipe/95/95894-13350-m.jpg" alt="">
-            <!-- <p class="float">kiwi</p> -->
+          <img
+            src="https://www.kindmeal.my/photos/recipe/95/95894-13350-m.jpg"
+            alt=""
+          />
+          <!-- <p class="float">kiwi</p> -->
         </div>
         <div id="third">
-          <div >
-            <img src="https://www.kindmeal.my/images/icon_time_small.png" alt="">
+          <div>
+            <img
+              src="https://www.kindmeal.my/images/icon_time_small.png"
+              alt=""
+            />
             <p>33 Mins</p>
           </div>
 
-           <div> <img src="https://www.kindmeal.my/images/icon_heart_small.png" alt="">
+          <div>
+            <img
+              src="https://www.kindmeal.my/images/icon_heart_small.png"
+              alt=""
+            />
             <p>8</p>
-            <img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="">
+            <img
+              src="https://www.kindmeal.my/images/icon_commentbubble_small.png"
+              alt=""
+            />
             <p>2</p>
+          </div>
         </div>
-        </div>
-    </div>
+      </div>
 
-   
-     <div id="recipe">
+      <div id="recipe">
         <div id="first">
-            <img src="https://www.kindmeal.my/photos/member/40/40177-s.jpg" alt="">
-            <p>Evnadham</p>
-            <button>View</button>
+          <img
+            src="https://www.kindmeal.my/photos/member/40/40177-s.jpg"
+            alt=""
+          />
+          <p>Evnadham</p>
+          <button>View</button>
         </div>
         <div id="second">
-
-            <img src="https://www.kindmeal.my/photos/recipe/95/95442-13293-m.jpg" alt="">
-            <!-- <p class="float">kiwi</p> -->
+          <img
+            src="https://www.kindmeal.my/photos/recipe/95/95442-13293-m.jpg"
+            alt=""
+          />
+          <!-- <p class="float">kiwi</p> -->
         </div>
         <div id="third">
-          <div >
-            <img src="https://www.kindmeal.my/images/icon_time_small.png" alt="">
+          <div>
+            <img
+              src="https://www.kindmeal.my/images/icon_time_small.png"
+              alt=""
+            />
             <p>10 Mins</p>
           </div>
 
-           <div> <img src="https://www.kindmeal.my/images/icon_heart_small.png" alt="">
+          <div>
+            <img
+              src="https://www.kindmeal.my/images/icon_heart_small.png"
+              alt=""
+            />
             <p>0</p>
-            <img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="">
+            <img
+              src="https://www.kindmeal.my/images/icon_commentbubble_small.png"
+              alt=""
+            />
             <p>0</p>
+          </div>
         </div>
-        </div>
+      </div>
     </div>
 
-</div>
-
-
-
-<div id="reciperow">
-
-    <div id="recipe">
+    <div id="reciperow">
+      <div id="recipe">
         <div id="first">
-            <img src="https://www.kindmeal.my/images/default_male-s.jpg" alt="">
-            <p>MyWeekendPlan</p>
-            <button>View</button>
+          <img src="https://www.kindmeal.my/images/default_male-s.jpg" alt="" />
+          <p>MyWeekendPlan</p>
+          <button>View</button>
         </div>
         <div id="second">
-
-            <img src="https://www.kindmeal.my/photos/recipe/117/117229-18230-m.jpg" alt="">
-            <!-- <p class="float">kiwi</p> -->
+          <img
+            src="https://www.kindmeal.my/photos/recipe/117/117229-18230-m.jpg"
+            alt=""
+          />
+          <!-- <p class="float">kiwi</p> -->
         </div>
         <div id="third">
-          <div >
-            <img src="https://www.kindmeal.my/images/icon_time_small.png" alt="">
+          <div>
+            <img
+              src="https://www.kindmeal.my/images/icon_time_small.png"
+              alt=""
+            />
             <p>3 Hours</p>
           </div>
 
-           <div> <img src="https://www.kindmeal.my/images/icon_heart_small.png" alt="">
+          <div>
+            <img
+              src="https://www.kindmeal.my/images/icon_heart_small.png"
+              alt=""
+            />
             <p>10</p>
-            <img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="">
+            <img
+              src="https://www.kindmeal.my/images/icon_commentbubble_small.png"
+              alt=""
+            />
             <p>7</p>
+          </div>
         </div>
-        </div>
-    </div>
+      </div>
 
-
-
-    <div id="recipe">
+      <div id="recipe">
         <div id="first">
-            <img src="https://www.kindmeal.my/images/default_male-s.jpg" alt="">
-            <p>BINAYKUMARKESHR</p>
-            <button>View</button>
+          <img src="https://www.kindmeal.my/images/default_male-s.jpg" alt="" />
+          <p>BINAYKUMARKESHR</p>
+          <button>View</button>
         </div>
         <div id="second">
-
-            <img src="https://www.kindmeal.my/photos/recipe/115/115444-17825-m.jpg" alt="">
-            <!-- <p class="float">kiwi</p> -->
+          <img
+            src="https://www.kindmeal.my/photos/recipe/115/115444-17825-m.jpg"
+            alt=""
+          />
+          <!-- <p class="float">kiwi</p> -->
         </div>
         <div id="third">
-          <div >
-            <img src="https://www.kindmeal.my/images/icon_time_small.png" alt="">
+          <div>
+            <img
+              src="https://www.kindmeal.my/images/icon_time_small.png"
+              alt=""
+            />
             <p>5 Hours</p>
           </div>
 
-           <div> <img src="https://www.kindmeal.my/images/icon_heart_small.png" alt="">
+          <div>
+            <img
+              src="https://www.kindmeal.my/images/icon_heart_small.png"
+              alt=""
+            />
             <p>15</p>
-            <img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="">
+            <img
+              src="https://www.kindmeal.my/images/icon_commentbubble_small.png"
+              alt=""
+            />
             <p>6</p>
+          </div>
         </div>
-        </div>
-    </div>
+      </div>
 
-   
-     <div id="recipe" class="Salads">
+      <div id="recipe" class="Salads">
         <div id="first">
-            <img src="https://www.kindmeal.my/images/default_male-s.jpg" alt="">
-            <p>BINAYKUMARKESHR</p>
-            <button>View</button>
+          <img src="https://www.kindmeal.my/images/default_male-s.jpg" alt="" />
+          <p>BINAYKUMARKESHR</p>
+          <button>View</button>
         </div>
         <div id="second">
-
-            <img src="https://www.kindmeal.my/photos/recipe/1039/1039460-58888-m.jpg" alt="">
-            <!-- <p class="float">kiwi</p> -->
+          <img
+            src="https://www.kindmeal.my/photos/recipe/1039/1039460-58888-m.jpg"
+            alt=""
+          />
+          <!-- <p class="float">kiwi</p> -->
         </div>
         <div id="third">
-          <div >
-            <img src="https://www.kindmeal.my/images/icon_time_small.png" alt="">
+          <div>
+            <img
+              src="https://www.kindmeal.my/images/icon_time_small.png"
+              alt=""
+            />
             <p>15 Mins</p>
           </div>
 
-           <div> <img src="https://www.kindmeal.my/images/icon_heart_small.png" alt="">
+          <div>
+            <img
+              src="https://www.kindmeal.my/images/icon_heart_small.png"
+              alt=""
+            />
             <p>0</p>
-            <img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="">
+            <img
+              src="https://www.kindmeal.my/images/icon_commentbubble_small.png"
+              alt=""
+            />
             <p>1</p>
+          </div>
         </div>
-        </div>
+      </div>
     </div>
 
-</div>
+    <div id="middle">
+      <img
+        src="https://www.kindmeal.my/images/ads/banner_ekoeko-1100x280.jpg"
+        alt=""
+      />
+    </div>
 
-
-<div id="middle">
-<img src="https://www.kindmeal.my/images/ads/banner_ekoeko-1100x280.jpg" alt="">
-</div>
-
-
-<div id="reciperow">
-
-    <div id="recipe">
+    <div id="reciperow">
+      <div id="recipe">
         <div id="first">
-            <img src="https://www.kindmeal.my/photos/member/10/10639-s.jpg" alt="">
-            <p>XianKy</p>
-            <button>View</button>
+          <img
+            src="https://www.kindmeal.my/photos/member/10/10639-s.jpg"
+            alt=""
+          />
+          <p>XianKy</p>
+          <button>View</button>
         </div>
         <div id="second">
-
-            <img src="https://www.kindmeal.my/photos/recipe/1000/1000010-19417-m.jpg" alt="">
-            <!-- <p class="float">kiwi</p> -->
+          <img
+            src="https://www.kindmeal.my/photos/recipe/1000/1000010-19417-m.jpg"
+            alt=""
+          />
+          <!-- <p class="float">kiwi</p> -->
         </div>
         <div id="third">
-          <div >
-            <img src="https://www.kindmeal.my/images/icon_time_small.png" alt="">
+          <div>
+            <img
+              src="https://www.kindmeal.my/images/icon_time_small.png"
+              alt=""
+            />
             <p>8 Hours</p>
           </div>
 
-           <div> <img src="https://www.kindmeal.my/images/icon_heart_small.png" alt="">
+          <div>
+            <img
+              src="https://www.kindmeal.my/images/icon_heart_small.png"
+              alt=""
+            />
             <p>20</p>
-            <img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="">
+            <img
+              src="https://www.kindmeal.my/images/icon_commentbubble_small.png"
+              alt=""
+            />
             <p>15</p>
+          </div>
         </div>
-        </div>
-    </div>
+      </div>
 
-
-
-    <div id="recipe">
+      <div id="recipe">
         <div id="first">
-            <img src="https://www.kindmeal.my/photos/member/29/29512-s.jpg" alt="">
-            <p>loveearthorganic</p>
-            <button>View</button>
+          <img
+            src="https://www.kindmeal.my/photos/member/29/29512-s.jpg"
+            alt=""
+          />
+          <p>loveearthorganic</p>
+          <button>View</button>
         </div>
         <div id="second">
-
-            <img src="https://www.kindmeal.my/photos/recipe/1000/1000016-19430-m.jpg" alt="">
-            <!-- <p class="float">kiwi</p> -->
+          <img
+            src="https://www.kindmeal.my/photos/recipe/1000/1000016-19430-m.jpg"
+            alt=""
+          />
+          <!-- <p class="float">kiwi</p> -->
         </div>
         <div id="third">
-          <div >
-            <img src="https://www.kindmeal.my/images/icon_time_small.png" alt="">
+          <div>
+            <img
+              src="https://www.kindmeal.my/images/icon_time_small.png"
+              alt=""
+            />
             <p>1 Hour 5min</p>
           </div>
 
-           <div> <img src="https://www.kindmeal.my/images/icon_heart_small.png" alt="">
+          <div>
+            <img
+              src="https://www.kindmeal.my/images/icon_heart_small.png"
+              alt=""
+            />
             <p>20</p>
-            <img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="">
+            <img
+              src="https://www.kindmeal.my/images/icon_commentbubble_small.png"
+              alt=""
+            />
             <p>5</p>
+          </div>
         </div>
-        </div>
-    </div>
+      </div>
 
-   
-     <div id="recipe">
+      <div id="recipe">
         <div id="first">
-            <img src="https://www.kindmeal.my/photos/member/14/14169-s.jpg" alt="">
-            <p>MayNg</p>
-            <button>View</button>
+          <img
+            src="https://www.kindmeal.my/photos/member/14/14169-s.jpg"
+            alt=""
+          />
+          <p>MayNg</p>
+          <button>View</button>
         </div>
         <div id="second">
-
-            <img src="https://www.kindmeal.my/photos/recipe/1000/1000011-19418-m.jpg" alt="">
-            <!-- <p class="float">kiwi</p> -->
+          <img
+            src="https://www.kindmeal.my/photos/recipe/1000/1000011-19418-m.jpg"
+            alt=""
+          />
+          <!-- <p class="float">kiwi</p> -->
         </div>
         <div id="third">
-          <div >
-            <img src="https://www.kindmeal.my/images/icon_time_small.png" alt="">
+          <div>
+            <img
+              src="https://www.kindmeal.my/images/icon_time_small.png"
+              alt=""
+            />
             <p>13 Mins</p>
           </div>
 
-           <div> <img src="https://www.kindmeal.my/images/icon_heart_small.png" alt="">
+          <div>
+            <img
+              src="https://www.kindmeal.my/images/icon_heart_small.png"
+              alt=""
+            />
             <p>1</p>
-            <img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="">
+            <img
+              src="https://www.kindmeal.my/images/icon_commentbubble_small.png"
+              alt=""
+            />
             <p>0</p>
+          </div>
         </div>
-        </div>
+      </div>
     </div>
 
-</div>
-
-
-<div id="reciperow">
-
-    <div id="recipe">
+    <div id="reciperow">
+      <div id="recipe">
         <div id="first">
-            <img src="https://www.kindmeal.my/photos/member/37/37844-s.jpg" alt="">
-            <p>BurhanBohra</p>
-            <button>View</button>
+          <img
+            src="https://www.kindmeal.my/photos/member/37/37844-s.jpg"
+            alt=""
+          />
+          <p>BurhanBohra</p>
+          <button>View</button>
         </div>
         <div id="second">
-
-            <img src="https://www.kindmeal.my/photos/recipe/1039/1039449-58866-m.jpg" alt="">
-            <!-- <p class="float">kiwi</p> -->
+          <img
+            src="https://www.kindmeal.my/photos/recipe/1039/1039449-58866-m.jpg"
+            alt=""
+          />
+          <!-- <p class="float">kiwi</p> -->
         </div>
         <div id="third">
-          <div >
-            <img src="https://www.kindmeal.my/images/icon_time_small.png" alt="">
+          <div>
+            <img
+              src="https://www.kindmeal.my/images/icon_time_small.png"
+              alt=""
+            />
             <p>22 Mins</p>
           </div>
 
-           <div> <img src="https://www.kindmeal.my/images/icon_heart_small.png" alt="">
+          <div>
+            <img
+              src="https://www.kindmeal.my/images/icon_heart_small.png"
+              alt=""
+            />
             <p>4</p>
-            <img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="">
+            <img
+              src="https://www.kindmeal.my/images/icon_commentbubble_small.png"
+              alt=""
+            />
             <p>3</p>
+          </div>
         </div>
-        </div>
-    </div>
+      </div>
 
-
-
-    <div id="recipe">
+      <div id="recipe">
         <div id="first">
-            <img src="https://www.kindmeal.my/photos/member/38/38334-s.jpg" alt="">
-            <p>shamanth</p>
-            <button>View</button>
+          <img
+            src="https://www.kindmeal.my/photos/member/38/38334-s.jpg"
+            alt=""
+          />
+          <p>shamanth</p>
+          <button>View</button>
         </div>
         <div id="second">
-
-            <img src="https://www.kindmeal.my/photos/recipe/1039/1039453-58877-m.jpg" alt="">
-            <!-- <p class="float">kiwi</p> -->
+          <img
+            src="https://www.kindmeal.my/photos/recipe/1039/1039453-58877-m.jpg"
+            alt=""
+          />
+          <!-- <p class="float">kiwi</p> -->
         </div>
         <div id="third">
-          <div >
-            <img src="https://www.kindmeal.my/images/icon_time_small.png" alt="">
+          <div>
+            <img
+              src="https://www.kindmeal.my/images/icon_time_small.png"
+              alt=""
+            />
             <p>60 Mins</p>
           </div>
 
-           <div> <img src="https://www.kindmeal.my/images/icon_heart_small.png" alt="">
+          <div>
+            <img
+              src="https://www.kindmeal.my/images/icon_heart_small.png"
+              alt=""
+            />
             <p>12</p>
-            <img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="">
+            <img
+              src="https://www.kindmeal.my/images/icon_commentbubble_small.png"
+              alt=""
+            />
             <p>5</p>
+          </div>
         </div>
-        </div>
-    </div>
+      </div>
 
-   
-     <div id="recipe">
+      <div id="recipe">
         <div id="first">
-            <img src="https://www.kindmeal.my/photos/member/39/39951-s.jpg" alt="">
-            <p>FoodLover398</p>
-            <button>View</button>
+          <img
+            src="https://www.kindmeal.my/photos/member/39/39951-s.jpg"
+            alt=""
+          />
+          <p>FoodLover398</p>
+          <button>View</button>
         </div>
         <div id="second">
-
-            <img src="https://www.kindmeal.my/photos/recipe/1039/1039472-58905-m.jpg" alt="">
-            <!-- <p class="float">kiwi</p> -->
+          <img
+            src="https://www.kindmeal.my/photos/recipe/1039/1039472-58905-m.jpg"
+            alt=""
+          />
+          <!-- <p class="float">kiwi</p> -->
         </div>
         <div id="third">
-          <div >
-            <img src="https://www.kindmeal.my/images/icon_time_small.png" alt="">
+          <div>
+            <img
+              src="https://www.kindmeal.my/images/icon_time_small.png"
+              alt=""
+            />
             <p>39 Mins</p>
           </div>
 
-           <div> <img src="https://www.kindmeal.my/images/icon_heart_small.png" alt="">
+          <div>
+            <img
+              src="https://www.kindmeal.my/images/icon_heart_small.png"
+              alt=""
+            />
             <p>7</p>
-            <img src="https://www.kindmeal.my/images/icon_commentbubble_small.png" alt="">
+            <img
+              src="https://www.kindmeal.my/images/icon_commentbubble_small.png"
+              alt=""
+            />
             <p>3</p>
+          </div>
         </div>
-        </div>
+      </div>
     </div>
 
-</div>
+    <div id="pages">
+      <div>Page:</div>
+      <div><a href="recipe1.html">1</a></div>
+      <div><a href="recipe2.html">2</a></div>
+      <div class="selected"><a href="recipe3.html">3</a></div>
+    </div>
 
-
-<div id="pages">
-    <div>Page:</div>
-    <div ><a href="recipe1.html">1</a></div>
-    <div><a href="recipe2.html">2</a></div>
-    <div class="selected"><a href="recipe3.html">3</a></div>
-</div>
-
-</body>
+    <!-- footer code -->
+    <footer id="footer">
+      <div id="maincontainer">
+        <div class="insidediv">
+          <h4>General</h4>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="signUpPage.html">Sign Up</a></p>
+          <p><a href="featured.html">Restaurateurs</a></p>
+          <p><a href="index.html">AboutKindMeal.my</a></p>
+          <p><a href="helppage.html">Help & FAQ</a></p>
+          <p><a href="contactus.html">Contact Us</a></p>
+        </div>
+        <div class="insidediv">
+          <h4>Features</h4>
+          <p><a href="meal_deals.html">Meat-Free Deals</a></p>
+          <p><a href="foodmenu.html">Tasty Menus</a></p>
+          <p><a href="kindmoments.html">Kind Moments</a></p>
+          <p><a href="recipe1.html">Meat-Free Recipes</a></p>
+          <p><a href="featured.html">Featured Restaurants</a></p>
+          <p><a href="directoryveg.html">Vegetarian & Vegan Directory</a></p>
+        </div>
+        <div class="insidediv">
+          <h4>Social Media</h4>
+          <p>
+            <a href="https://www.kindmeal.my/widget.htm">KindMeal Widget</a>
+          </p>
+          <p><a href="https://www.facebook.com/KindMeal.my">Facebook</a></p>
+          <p><a href="https://twitter.com/KindMeal">Twitter</a></p>
+          <p><a href="http://instagram.com/KindMeal.my">Instagram</a></p>
+        </div>
+      </div>
+      <p>Copyright © KindMeal.my, 2014 - 2022. All rights reserved.</p>
+      <p>
+        This website promotes compassionate, meat-free dining experience. Some
+        food may contain eggs, dairy products or alcohol, please view individual
+        listings for details.
+      </p>
+    </footer>
+  </body>
 </html>
 <!-- 
 <script>

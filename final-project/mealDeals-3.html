@@ -1,279 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles_md.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles_md.css" />
+    <link rel="stylesheet" href="index.css" />
     <title>Featured Meat-Free Deals & Vegetarian Food</title>
-</head>
-<body>
+  </head>
+  <body>
+
+       <!-- navbar -->
+
+       <div id="navbar1">
+        <div>
+          <img
+            src="https://www.kindmeal.my/images/logo-kindmeal.png"
+            alt="Error"
+          />
+        </div>
+        <div>
+          <a href="https://www.kindmeal.my/widget.htm" target="_blank">
+            <img
+              src="https://www.kindmeal.my/images/follow_blog_grey.png"
+              alt="Error"
+          /></a>
+          <a href="https://www.facebook.com/KindMeal.my" target="_blank">
+            <img
+              src="https://www.kindmeal.my/images/follow_facebook_grey.png"
+              alt="Error"
+          /></a>
+          <a href="https://twitter.com/KindMeal" target="_blank"
+            ><img
+              src="https://www.kindmeal.my/images/follow_twitter_grey.png"
+              alt="Error"
+          /></a>
+        </div>
+        <div>
+          <p>Login</p>
+          <button id="fbBtn">Facebook</button>
+          <button id="emailBtn"><a href="email.html">Email</a></button>
+          <p><a style="color: black" href="signUpPage.html">Sign Up</a></p>
+        </div>
+      </div>
+      <div id="navbar2">
+        <div id="buttons">
+          <div>
+            <span><a href="index.html">Home</a></span>
+          </div>
+          <div><a href="mealDeals.html">Meal Deals</a></div>
+          <div><a href="kindmoments.html">KindMoments</a></div>
+          <div><a href="recipe1.html">Recipe</a></div>
+          <div><a href="directoryveg.html">Directory</a></div>
+          <div><a href="article.html">Articles</a></div>
+          <div><a href="helppage.html">Help</a></div>
+        </div>
+      </div>
     <div class="container">
+      <div>
         <div>
-            <div>
-                <h1>Meat-Free Deals <span id="greyText">&nbsp;|&nbsp; Restaurants In Malaysia</span></h1>
-                <p>Browse delicious meat-free, vegetarian deals from top restaurants and cafes! 
-                    Just click on "Get Free Coupon" to obtain instant discounts and dine at the restaurants. 
-                    No upfront payment, booking or printing is needed. 
-                    If you share it on social media, you'll even DOUBLE your discount!
-                </p>
-                <p>Download our <a href="#">mobile app</a> now to easily get coupons and start dining in a few seconds. Effortlessly save lives, health, environment and money now! </p>
-                <div>
-                    <input type="text" id="dealOrShop" placeholder="Search Shop or Deal Name">
-                    <select name="categories" id="categories">
-                        <option value="all">All Categories</option>
-                        <option value="breakfast">breakfast</option>
-                        <option value="tea & dessert">tea & dessert</option>
-                        <option value="local delights">local delights</option>
-                        <option value="japanese">japanese</option>
-                        <option value="chinese">chinese</option>
-                        <option value="indian">indian</option>
-                    </select>
-                    <select name="location" id="location">
-                        <option value="all">All Locations</option>
-                        <option value="">Countries</option>
-                        <option value="Malaysia">•&nbsp; Malaysia</option>                        
-                        <option value="China">•&nbsp; China</option>
-                        <option value="Japan">•&nbsp; Japan</option>   
-                        <option value="India">•&nbsp; India</option>    
-                        <option value="Thailand">•&nbsp; Thailand</option>     
-                        <option value="Bhutan">•&nbsp; Bhutan</option>      
-                        <option value="Bangladesh">•&nbsp; Bangladesh</option>                        
+          <h1>
+            Meat-Free Deals
+            <span id="greyText">&nbsp;|&nbsp; Restaurants In Malaysia</span>
+          </h1>
+          <p>
+            Browse delicious meat-free, vegetarian deals from top restaurants
+            and cafes! Just click on "Get Free Coupon" to obtain instant
+            discounts and dine at the restaurants. No upfront payment, booking
+            or printing is needed. If you share it on social media, you'll even
+            DOUBLE your discount!
+          </p>
+          <p>
+            Download our <a href="#">mobile app</a> now to easily get coupons
+            and start dining in a few seconds. Effortlessly save lives, health,
+            environment and money now!
+          </p>
+          <div>
+            <input
+              type="text"
+              id="dealOrShop"
+              placeholder="Search Shop or Deal Name"
+            />
+            <select name="categories" id="categories">
+              <option value="all">All Categories</option>
+              <option value="breakfast">breakfast</option>
+              <option value="tea & dessert">tea & dessert</option>
+              <option value="local delights">local delights</option>
+              <option value="japanese">japanese</option>
+              <option value="chinese">chinese</option>
+              <option value="indian">indian</option>
+            </select>
+            <select name="location" id="location">
+              <option value="all">All Locations</option>
+              <option value="">Countries</option>
+              <option value="Malaysia">•&nbsp; Malaysia</option>
+              <option value="China">•&nbsp; China</option>
+              <option value="Japan">•&nbsp; Japan</option>
+              <option value="India">•&nbsp; India</option>
+              <option value="Thailand">•&nbsp; Thailand</option>
+              <option value="Bhutan">•&nbsp; Bhutan</option>
+              <option value="Bangladesh">•&nbsp; Bangladesh</option>
 
-                        <option value=""></option>
-                        <option value="">Other States</option>
-                        <option value="Beijing">•&nbsp; Beijing</option>
-                        <option value="Perak">•&nbsp; Perak</option>
-                    </select>
-                    <button id="search">Search Deals</button>
-                    <button id="searchRes">Browse Restaurants</button>
-                </div>
-            </div>
+              <option value=""></option>
+              <option value="">Other States</option>
+              <option value="Beijing">•&nbsp; Beijing</option>
+              <option value="Perak">•&nbsp; Perak</option>
+            </select>
+            <button id="search">Search Deals</button>
+            <button id="searchRes">Browse Restaurants</button>
+          </div>
         </div>
+      </div>
 
-        <div>
-            <!-- <img src="https://www.kindmeal.my/images/banner_directory.jpg" alt="banner"> -->
+      <div>
+        <!-- <img src="https://www.kindmeal.my/images/banner_directory.jpg" alt="banner"> -->
+      </div>
+
+      <div id="pages">
+        <div>Page:</div>
+        <div><a href="mealDeals.html">1</a></div>
+        <div><a href="mealsDeals-2.html">2</a></div>
+        <div class="selected"><a href="mealDeals-3.html">3</a></div>
+      </div>
+
+      <div id="coupons">
+        <!-- all the cards come here -->
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div id="maincontainer">
+        <div class="insidediv">
+          <h4>General</h4>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="signUpPage.html">Sign Up</a></p>
+          <p><a href="featured.html">Restaurateurs</a></p>
+          <p><a href="index.html">AboutKindMeal.my</a></p>
+          <p><a href="helppage.html">Help & FAQ</a></p>
+          <p><a href="contactus.html">Contact Us</a></p>
         </div>
-
-        <div id="pages">
-            <div>Page:</div>
-            <div><a href="mealDeals.html">1</a></div>
-            <div><a href="mealsDeals-2.html">2</a></div>
-            <div class="selected"><a href="mealDeals-3.html">3</a></div>
+        <div class="insidediv">
+          <h4>Features</h4>
+          <p><a href="meal_deals.html">Meat-Free Deals</a></p>
+          <p><a href="foodmenu.html">Tasty Menus</a></p>
+          <p><a href="kindmoments.html">Kind Moments</a></p>
+          <p><a href="recipe1.html">Meat-Free Recipes</a></p>
+          <p><a href="featured.html">Featured Restaurants</a></p>
+          <p><a href="directoryveg.html">Vegetarian & Vegan Directory</a></p>
         </div>
-
-        <div id="coupons">
-            <!-- all the cards come here -->
+        <div class="insidediv">
+          <h4>Social Media</h4>
+          <p>
+            <a href="https://www.kindmeal.my/widget.htm">KindMeal Widget</a>
+          </p>
+          <p><a href="https://www.facebook.com/KindMeal.my">Facebook</a></p>
+          <p><a href="https://twitter.com/KindMeal">Twitter</a></p>
+          <p><a href="http://instagram.com/KindMeal.my">Instagram</a></p>
         </div>
-    </div>    
-</body>
-<script>
-    let couponData=[
-        {
-            dishCategory:"https://www.kindmeal.my/photos/deal/5/518-3788-l.jpg",
-            dishLink:"",
-            cat:"breakfast",
-            dishName:"Trade & Dine Adventure",
-            resName:"Drop Exchange",
-            resLink:"",
-            resLocation:"Perak",
-            resDescription:"Enjoy an unforgettable experience at the first Wall Street-themed bar and restaurant in Kuala Lumpur! Serving you quintessential .."
-        },
-        {
-            dishCategory:"https://www.kindmeal.my/photos/deal/6/680-4384-m.jpg",
-            dishLink:"",
-            cat:"japanese",
-            dishName:"Hearty Comfort Food",
-            resName:"Su Zhi Yuan Cafe 素之缘餐厅",
-            resLink:"",
-            resLocation:"Japan",
-            resDescription:"Su Zhi Yuan Cafe strives to serve you delicious and healthy vegetarian meals within a comfortable dining environment. All our foo.."
-        },
-        {
-            dishCategory:"https://www.kindmeal.my/photos/deal/6/681-4353-l.jpg",
-            dishLink:"",
-            cat:"indian",
-            dishName:"Contemporary Vegetarian Experience",
-            resName:"Berjaya Cafe",
-            resLink:"",
-            resLocation:"India",
-            resDescription:"Berjaya Cafe delights you with opulence, style and taste from the best chefs in town. Savor only the best in gastronomic experien.."
-        },
-        {
-            dishCategory:"https://www.kindmeal.my/photos/deal/6/614-3355-l.jpg",
-            dishLink:"",
-            cat:"local delights",
-            dishName:"Memorable Vegetarian Delights",
-            resName:"Elyn Vegetarian ",
-            resLink:"",
-            resLocation:"Beijing",
-            resDescription:"As our restaurant's name implies, we bring you memorable vegetarian cuisines that are both a beauty of taste and visual appeal. E.."
-        },
-        {
-            dishCategory:"https://www.kindmeal.my/photos/deal/4/403-1390-l.jpg",
-            dishLink:"https://www.kindmeal.my/JuveWellness/deal-403.htm",
-            cat:"salad",
-            dishName:"Wellness Meal + 10% Off Organic Products",
-            resName:"Juve Wellness Puchong ",
-            resLink:"https://www.kindmeal.my/JuveWellness",
-            resLocation:"Bhutan",
-            resDescription:"Select from Ala Carte meal items from the menu, served with a cup of Wellness Tea! Featured food menu items include: Juve Four Se.."
-        },
-        {
-            dishCategory:"https://www.kindmeal.my/photos/deal/6/644-3810-m.jpg",
-            dishLink:"https://www.kindmeal.my/PiccoloCafe/deal-644.htm",
-            cat:"tea & dessert",
-            dishName:"Wholesome Western Experience",
-            resName:"Piccolo Cafe",
-            resLink:"https://www.kindmeal.my/PiccoloCafe",
-            resLocation:"Malaysia",
-            resDescription:"Enjoy delicious, wholesome Western cuisine at our cozy, relaxing cafe while we serenade you with our artsy ambiance and musical mo.."
-        },
-        {
-            dishCategory:"https://www.kindmeal.my/photos/deal/6/692-4538-l.jpg",
-            dishLink:"",
-            cat:"chinese",
-            dishName:"Simply Delicious Meals",
-            resName:"Simply Good Food",
-            resLink:"",
-            resLocation:"China",
-            resDescription:"Simply Good Food delights you with our passion for authentic ingredients, honest cooking, and an enjoyable atmosphere. We serve y.."
-        },
-        {
-            dishCategory:"https://www.kindmeal.my/photos/deal/6/634-3683-l.jpg",
-            dishLink:"",
-            cat:"local delights",
-            dishName:"Vegan Thai Delights",
-            resName:"Veggielicious Thai Cuisine",
-            resLink:"",
-            resLocation:"Thailand",
-            resDescription:"Indulge in a wide array of authentic Thai vegan dishes within a cozy environment! Deliciously crafted to bring you the finest gas.."
-        },
-        {
-            dishCategory:"https://www.kindmeal.my/photos/deal/6/698-4639-l.jpg",
-            dishLink:"https://www.kindmeal.my/Croutons/deal-529.htm",
-            cat:"breakfast",
-            dishName:"Scrumptious Croutons",
-            resName:"Croutons Cafe",
-            resLink:"https://www.kindmeal.my/Croutons",
-            resLocation:"Bangladesh",
-            resDescription:"Croutons brings you a sumptuous variety of international cuisines. Indulge in any of the meat-free items from our menu below: • .."
-        },
-        {
-            dishCategory:"https://www.kindmeal.my/photos/deal/6/615-3466-l.jpg",
-            dishLink:"https://www.kindmeal.my/BlissfulCottage/deal-615.htm",
-            cat:"chinese",
-            dishName:"Blissful, Nutritious Experience",
-            resName:"Blissful Cottage by Jing Shi Bakery",
-            resLink:"https://www.kindmeal.my/BlissfulCottage",
-            resLocation:"China",
-            resDescription:"Blissful Cottage serves healthy, nutritious breakfast and lunch. Prepared with the best organic and natural ingredients, our hand.."
-        },
-        // another 10 obj
+      </div>
+      <p>Copyright © KindMeal.my, 2014 - 2022. All rights reserved.</p>
+      <p>
+        This website promotes compassionate, meat-free dining experience. Some
+        food may contain eggs, dairy products or alcohol, please view individual
+        listings for details.
+      </p>
+    </footer>
+  </body>
+  <script>
+    let couponData = [
+      {
+        dishCategory: "https://www.kindmeal.my/photos/deal/5/518-3788-l.jpg",
+        dishLink: "",
+        cat: "breakfast",
+        dishName: "Trade & Dine Adventure",
+        resName: "Drop Exchange",
+        resLink: "",
+        resLocation: "Perak",
+        resDescription:
+          "Enjoy an unforgettable experience at the first Wall Street-themed bar and restaurant in Kuala Lumpur! Serving you quintessential ..",
+      },
+      {
+        dishCategory: "https://www.kindmeal.my/photos/deal/6/680-4384-m.jpg",
+        dishLink: "",
+        cat: "japanese",
+        dishName: "Hearty Comfort Food",
+        resName: "Su Zhi Yuan Cafe 素之缘餐厅",
+        resLink: "",
+        resLocation: "Japan",
+        resDescription:
+          "Su Zhi Yuan Cafe strives to serve you delicious and healthy vegetarian meals within a comfortable dining environment. All our foo..",
+      },
+      {
+        dishCategory: "https://www.kindmeal.my/photos/deal/6/681-4353-l.jpg",
+        dishLink: "",
+        cat: "indian",
+        dishName: "Contemporary Vegetarian Experience",
+        resName: "Berjaya Cafe",
+        resLink: "",
+        resLocation: "India",
+        resDescription:
+          "Berjaya Cafe delights you with opulence, style and taste from the best chefs in town. Savor only the best in gastronomic experien..",
+      },
+      {
+        dishCategory: "https://www.kindmeal.my/photos/deal/6/614-3355-l.jpg",
+        dishLink: "",
+        cat: "local delights",
+        dishName: "Memorable Vegetarian Delights",
+        resName: "Elyn Vegetarian ",
+        resLink: "",
+        resLocation: "Beijing",
+        resDescription:
+          "As our restaurant's name implies, we bring you memorable vegetarian cuisines that are both a beauty of taste and visual appeal. E..",
+      },
+      {
+        dishCategory: "https://www.kindmeal.my/photos/deal/4/403-1390-l.jpg",
+        dishLink: "https://www.kindmeal.my/JuveWellness/deal-403.htm",
+        cat: "salad",
+        dishName: "Wellness Meal + 10% Off Organic Products",
+        resName: "Juve Wellness Puchong ",
+        resLink: "https://www.kindmeal.my/JuveWellness",
+        resLocation: "Bhutan",
+        resDescription:
+          "Select from Ala Carte meal items from the menu, served with a cup of Wellness Tea! Featured food menu items include: Juve Four Se..",
+      },
+      {
+        dishCategory: "https://www.kindmeal.my/photos/deal/6/644-3810-m.jpg",
+        dishLink: "https://www.kindmeal.my/PiccoloCafe/deal-644.htm",
+        cat: "tea & dessert",
+        dishName: "Wholesome Western Experience",
+        resName: "Piccolo Cafe",
+        resLink: "https://www.kindmeal.my/PiccoloCafe",
+        resLocation: "Malaysia",
+        resDescription:
+          "Enjoy delicious, wholesome Western cuisine at our cozy, relaxing cafe while we serenade you with our artsy ambiance and musical mo..",
+      },
+      {
+        dishCategory: "https://www.kindmeal.my/photos/deal/6/692-4538-l.jpg",
+        dishLink: "",
+        cat: "chinese",
+        dishName: "Simply Delicious Meals",
+        resName: "Simply Good Food",
+        resLink: "",
+        resLocation: "China",
+        resDescription:
+          "Simply Good Food delights you with our passion for authentic ingredients, honest cooking, and an enjoyable atmosphere. We serve y..",
+      },
+      {
+        dishCategory: "https://www.kindmeal.my/photos/deal/6/634-3683-l.jpg",
+        dishLink: "",
+        cat: "local delights",
+        dishName: "Vegan Thai Delights",
+        resName: "Veggielicious Thai Cuisine",
+        resLink: "",
+        resLocation: "Thailand",
+        resDescription:
+          "Indulge in a wide array of authentic Thai vegan dishes within a cozy environment! Deliciously crafted to bring you the finest gas..",
+      },
+      {
+        dishCategory: "https://www.kindmeal.my/photos/deal/6/698-4639-l.jpg",
+        dishLink: "https://www.kindmeal.my/Croutons/deal-529.htm",
+        cat: "breakfast",
+        dishName: "Scrumptious Croutons",
+        resName: "Croutons Cafe",
+        resLink: "https://www.kindmeal.my/Croutons",
+        resLocation: "Bangladesh",
+        resDescription:
+          "Croutons brings you a sumptuous variety of international cuisines. Indulge in any of the meat-free items from our menu below: • ..",
+      },
+      {
+        dishCategory: "https://www.kindmeal.my/photos/deal/6/615-3466-l.jpg",
+        dishLink: "https://www.kindmeal.my/BlissfulCottage/deal-615.htm",
+        cat: "chinese",
+        dishName: "Blissful, Nutritious Experience",
+        resName: "Blissful Cottage by Jing Shi Bakery",
+        resLink: "https://www.kindmeal.my/BlissfulCottage",
+        resLocation: "China",
+        resDescription:
+          "Blissful Cottage serves healthy, nutritious breakfast and lunch. Prepared with the best organic and natural ingredients, our hand..",
+      },
+      // another 10 obj
 
-
-        {
-            dishCategory:"https://www.kindmeal.my/photos/deal/5/518-3788-l.jpg",
-            dishLink:"",
-            cat:"breakfast",
-            dishName:"Trade & Dine Adventure",
-            resName:"Drop Exchange",
-            resLink:"",
-            resLocation:"Perak",
-            resDescription:"Enjoy an unforgettable experience at the first Wall Street-themed bar and restaurant in Kuala Lumpur! Serving you quintessential .."
-        },
-        {
-            dishCategory:"https://www.kindmeal.my/photos/deal/6/681-4353-l.jpg",
-            dishLink:"",
-            cat:"indian",
-            dishName:"Contemporary Vegetarian Experience",
-            resName:"Berjaya Cafe",
-            resLink:"",
-            resLocation:"India",
-            resDescription:"Berjaya Cafe delights you with opulence, style and taste from the best chefs in town. Savor only the best in gastronomic experien.."
-        },
-        {
-            dishCategory:"https://www.kindmeal.my/photos/deal/6/634-3683-l.jpg",
-            dishLink:"",
-            cat:"local delights",
-            dishName:"Vegan Thai Delights",
-            resName:"Veggielicious Thai Cuisine",
-            resLink:"",
-            resLocation:"Thailand",
-            resDescription:"Indulge in a wide array of authentic Thai vegan dishes within a cozy environment! Deliciously crafted to bring you the finest gas.."
-        },
-        {
-            dishCategory:"https://www.kindmeal.my/photos/deal/6/680-4384-m.jpg",
-            dishLink:"",
-            cat:"japanese",
-            dishName:"Hearty Comfort Food",
-            resName:"Su Zhi Yuan Cafe 素之缘餐厅",
-            resLink:"",
-            resLocation:"Japan",
-            resDescription:"Su Zhi Yuan Cafe strives to serve you delicious and healthy vegetarian meals within a comfortable dining environment. All our foo.."
-        },
-        {
-            dishCategory:"https://www.kindmeal.my/photos/deal/6/692-4538-l.jpg",
-            dishLink:"",
-            cat:"chinese",
-            dishName:"Simply Delicious Meals",
-            resName:"Simply Good Food",
-            resLink:"",
-            resLocation:"China",
-            resDescription:"Simply Good Food delights you with our passion for authentic ingredients, honest cooking, and an enjoyable atmosphere. We serve y.."
-        },
-        {
-            dishCategory:"https://www.kindmeal.my/photos/deal/6/614-3355-l.jpg",
-            dishLink:"",
-            cat:"local delights",
-            dishName:"Memorable Vegetarian Delights",
-            resName:"Elyn Vegetarian ",
-            resLink:"",
-            resLocation:"Beijing",
-            resDescription:"As our restaurant's name implies, we bring you memorable vegetarian cuisines that are both a beauty of taste and visual appeal. E.."
-        },
-        {
-            dishCategory:"https://www.kindmeal.my/photos/deal/6/644-3810-m.jpg",
-            dishLink:"https://www.kindmeal.my/PiccoloCafe/deal-644.htm",
-            cat:"tea & dessert",
-            dishName:"Wholesome Western Experience",
-            resName:"Piccolo Cafe",
-            resLink:"https://www.kindmeal.my/PiccoloCafe",
-            resLocation:"Malaysia",
-            resDescription:"Enjoy delicious, wholesome Western cuisine at our cozy, relaxing cafe while we serenade you with our artsy ambiance and musical mo.."
-        },
-        {
-            dishCategory:"https://www.kindmeal.my/photos/deal/4/403-1390-l.jpg",
-            dishLink:"https://www.kindmeal.my/JuveWellness/deal-403.htm",
-            cat:"salad",
-            dishName:"Wellness Meal + 10% Off Organic Products",
-            resName:"Juve Wellness Puchong ",
-            resLink:"https://www.kindmeal.my/JuveWellness",
-            resLocation:"Bhutan",
-            resDescription:"Select from Ala Carte meal items from the menu, served with a cup of Wellness Tea! Featured food menu items include: Juve Four Se.."
-        },
-        {
-            dishCategory:"https://www.kindmeal.my/photos/deal/6/615-3466-l.jpg",
-            dishLink:"https://www.kindmeal.my/BlissfulCottage/deal-615.htm",
-            cat:"chinese",
-            dishName:"Blissful, Nutritious Experience",
-            resName:"Blissful Cottage by Jing Shi Bakery",
-            resLink:"https://www.kindmeal.my/BlissfulCottage",
-            resLocation:"China",
-            resDescription:"Blissful Cottage serves healthy, nutritious breakfast and lunch. Prepared with the best organic and natural ingredients, our hand.."
-        },
-        {
-            dishCategory:"https://www.kindmeal.my/photos/deal/6/698-4639-l.jpg",
-            dishLink:"https://www.kindmeal.my/Croutons/deal-529.htm",
-            cat:"breakfast",
-            dishName:"Scrumptious Croutons",
-            resName:"Croutons Cafe",
-            resLink:"https://www.kindmeal.my/Croutons",
-            resLocation:"Bangladesh",
-            resDescription:"Croutons brings you a sumptuous variety of international cuisines. Indulge in any of the meat-free items from our menu below: • .."
-        }
-    ]
-
-</script>
-<script src="meal_deals.js"></script>
+      {
+        dishCategory: "https://www.kindmeal.my/photos/deal/5/518-3788-l.jpg",
+        dishLink: "",
+        cat: "breakfast",
+        dishName: "Trade & Dine Adventure",
+        resName: "Drop Exchange",
+        resLink: "",
+        resLocation: "Perak",
+        resDescription:
+          "Enjoy an unforgettable experience at the first Wall Street-themed bar and restaurant in Kuala Lumpur! Serving you quintessential ..",
+      },
+      {
+        dishCategory: "https://www.kindmeal.my/photos/deal/6/681-4353-l.jpg",
+        dishLink: "",
+        cat: "indian",
+        dishName: "Contemporary Vegetarian Experience",
+        resName: "Berjaya Cafe",
+        resLink: "",
+        resLocation: "India",
+        resDescription:
+          "Berjaya Cafe delights you with opulence, style and taste from the best chefs in town. Savor only the best in gastronomic experien..",
+      },
+      {
+        dishCategory: "https://www.kindmeal.my/photos/deal/6/634-3683-l.jpg",
+        dishLink: "",
+        cat: "local delights",
+        dishName: "Vegan Thai Delights",
+        resName: "Veggielicious Thai Cuisine",
+        resLink: "",
+        resLocation: "Thailand",
+        resDescription:
+          "Indulge in a wide array of authentic Thai vegan dishes within a cozy environment! Deliciously crafted to bring you the finest gas..",
+      },
+      {
+        dishCategory: "https://www.kindmeal.my/photos/deal/6/680-4384-m.jpg",
+        dishLink: "",
+        cat: "japanese",
+        dishName: "Hearty Comfort Food",
+        resName: "Su Zhi Yuan Cafe 素之缘餐厅",
+        resLink: "",
+        resLocation: "Japan",
+        resDescription:
+          "Su Zhi Yuan Cafe strives to serve you delicious and healthy vegetarian meals within a comfortable dining environment. All our foo..",
+      },
+      {
+        dishCategory: "https://www.kindmeal.my/photos/deal/6/692-4538-l.jpg",
+        dishLink: "",
+        cat: "chinese",
+        dishName: "Simply Delicious Meals",
+        resName: "Simply Good Food",
+        resLink: "",
+        resLocation: "China",
+        resDescription:
+          "Simply Good Food delights you with our passion for authentic ingredients, honest cooking, and an enjoyable atmosphere. We serve y..",
+      },
+      {
+        dishCategory: "https://www.kindmeal.my/photos/deal/6/614-3355-l.jpg",
+        dishLink: "",
+        cat: "local delights",
+        dishName: "Memorable Vegetarian Delights",
+        resName: "Elyn Vegetarian ",
+        resLink: "",
+        resLocation: "Beijing",
+        resDescription:
+          "As our restaurant's name implies, we bring you memorable vegetarian cuisines that are both a beauty of taste and visual appeal. E..",
+      },
+      {
+        dishCategory: "https://www.kindmeal.my/photos/deal/6/644-3810-m.jpg",
+        dishLink: "https://www.kindmeal.my/PiccoloCafe/deal-644.htm",
+        cat: "tea & dessert",
+        dishName: "Wholesome Western Experience",
+        resName: "Piccolo Cafe",
+        resLink: "https://www.kindmeal.my/PiccoloCafe",
+        resLocation: "Malaysia",
+        resDescription:
+          "Enjoy delicious, wholesome Western cuisine at our cozy, relaxing cafe while we serenade you with our artsy ambiance and musical mo..",
+      },
+      {
+        dishCategory: "https://www.kindmeal.my/photos/deal/4/403-1390-l.jpg",
+        dishLink: "https://www.kindmeal.my/JuveWellness/deal-403.htm",
+        cat: "salad",
+        dishName: "Wellness Meal + 10% Off Organic Products",
+        resName: "Juve Wellness Puchong ",
+        resLink: "https://www.kindmeal.my/JuveWellness",
+        resLocation: "Bhutan",
+        resDescription:
+          "Select from Ala Carte meal items from the menu, served with a cup of Wellness Tea! Featured food menu items include: Juve Four Se..",
+      },
+      {
+        dishCategory: "https://www.kindmeal.my/photos/deal/6/615-3466-l.jpg",
+        dishLink: "https://www.kindmeal.my/BlissfulCottage/deal-615.htm",
+        cat: "chinese",
+        dishName: "Blissful, Nutritious Experience",
+        resName: "Blissful Cottage by Jing Shi Bakery",
+        resLink: "https://www.kindmeal.my/BlissfulCottage",
+        resLocation: "China",
+        resDescription:
+          "Blissful Cottage serves healthy, nutritious breakfast and lunch. Prepared with the best organic and natural ingredients, our hand..",
+      },
+      {
+        dishCategory: "https://www.kindmeal.my/photos/deal/6/698-4639-l.jpg",
+        dishLink: "https://www.kindmeal.my/Croutons/deal-529.htm",
+        cat: "breakfast",
+        dishName: "Scrumptious Croutons",
+        resName: "Croutons Cafe",
+        resLink: "https://www.kindmeal.my/Croutons",
+        resLocation: "Bangladesh",
+        resDescription:
+          "Croutons brings you a sumptuous variety of international cuisines. Indulge in any of the meat-free items from our menu below: • ..",
+      },
+    ];
+  </script>
+  <script src="meal_deals.js"></script>
 </html>

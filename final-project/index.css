@@ -175,7 +175,7 @@ a {
 }
 /* third image sliding style */
 #imageslide {
-  width: 82%;
+  width: 80%;
   margin: auto;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -194,7 +194,7 @@ a {
 }
 .mySlides {
   padding: 20px 10px;
-  width: 12%;
+  width: 11.85%;
 }
 /* .imageover{
     width: 70%;
@@ -481,5 +481,4 @@ body > h4 {
 /* anchor tag */
 a {
   text-decoration: none;
-
 }

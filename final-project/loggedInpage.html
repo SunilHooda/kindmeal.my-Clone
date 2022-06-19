@@ -35,10 +35,10 @@
         /></a>
       </div>
       <div>
-        <p>Login</p>
+        <p id="userName"></p>
         <button id="fbBtn">Facebook</button>
         <button id="emailBtn"><a href="email.html">Email</a></button>
-        <p><a style="color: black" href="signUpPage.html">Sign Up</a></p>
+        <p><a style="color: black" href="index.html">Log Out</a></p>
       </div>
     </div>
     <div id="navbar2">
@@ -309,3 +309,9 @@
   </body>
 </html>
 <script src="index.js"></script>
+<script>
+  let name = document.querySelector("#userName");
+  let arr = JSON.parse(localStorage.getItem("customerData"));
+  // console.log(arr[0].uname);
+  name.innerText = arr[0].uname;
+</script>

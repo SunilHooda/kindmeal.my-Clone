@@ -1,59 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signin Successful page</title>
-    <link rel="stylesheet" href="signupSuccesfulPage.css">
-</head>
-<body>
+    <link rel="stylesheet" href="signupSuccesfulPage.css" />
+    <style>
+      #loginBtn {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
     <div id="main">
-        <div>
-          <div class="divPad">
-            <img
-              src="https://www.kindmeal.my/images/join_normal.png"
-              alt="Error"
-            />
-            <p>Food Lover Sign Up</p>
-          </div>
-          <div class="divPad">
-            <img src="https://www.kindmeal.my/images/join_shop.png" alt="Error" />
-            <p>Restaurant Sign Up</p>
-          </div>
-          <div class="divSpace">
-            <h2>Why KindMeal?</h2>
-            <ul>
-              <li>Exclusive meat-free deals</li>
-              <li>Share yummy food moments</li>
-              <li>Meet friendly food lovers</li>
-              <li>Discover cul restaurants</li>
-              <li>Email updates on tasty deals</li>
-              <li>Instant coupons & dining</li>
-              <li>No upfront payment, booking or printing</li>
-            </ul>
-            <p>More about KindMeal »</p>
-          </div>
+      <div>
+        <div class="divPad">
+          <img
+            src="https://www.kindmeal.my/images/join_normal.png"
+            alt="Error"
+          />
+          <p>Food Lover Sign Up</p>
         </div>
-        <div id="rightSide">
-            <div>
-                <div>
-                    <img src="https://toppng.com/uploads/preview/open-right-answer-icon-11563404342yujnprc2vo.png" alt="Error">
-                    <p>Sign Up Successful</p>
-                </div>
-                <p class="upperMargin">Congratulations, you're now ready to get started on KindMeal.my</p>
-                <p class="upperMargin">A verification email has been sent to . Please click on the link there to activate your account and begin redeeming coupons.</p>
-                <p class="upperMargin">Yummy meals are waiting for you</p>
-                <button class="button" id="loginBtn">Login To Account</button>
-            </div>
+        <div class="divPad">
+          <img src="https://www.kindmeal.my/images/join_shop.png" alt="Error" />
+          <p>Restaurant Sign Up</p>
+        </div>
+        <div class="divSpace">
+          <h2>Why KindMeal?</h2>
+          <ul>
+            <li>Exclusive meat-free deals</li>
+            <li>Share yummy food moments</li>
+            <li>Meet friendly food lovers</li>
+            <li>Discover cul restaurants</li>
+            <li>Email updates on tasty deals</li>
+            <li>Instant coupons & dining</li>
+            <li>No upfront payment, booking or printing</li>
+          </ul>
+          <p>More about KindMeal »</p>
         </div>
       </div>
-</body>
+      <div id="rightSide">
+        <div>
+          <div>
+            <img
+              src="https://toppng.com/uploads/preview/open-right-answer-icon-11563404342yujnprc2vo.png"
+              alt="Error"
+            />
+            <p>Sign Up Successful</p>
+          </div>
+          <p class="upperMargin">
+            Congratulations, you're now ready to get started on KindMeal.my
+          </p>
+          <p class="upperMargin">
+            A verification email has been sent to . Please click on the link
+            there to activate your account and begin redeeming coupons.
+          </p>
+          <p class="upperMargin">Yummy meals are waiting for you</p>
+          <button class="button" id="loginBtn">Login To Account</button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
 <script>
-   document.querySelector("#loginBtn").addEventListener("click", goToHome);
+  document.querySelector("#loginBtn").addEventListener("click", goToHome);
 
-   function goToHome(){
-    window.location.href="";
-   }
+  function goToHome() {
+    window.location.href = "email.html";
+  }
 </script>

@@ -55,6 +55,21 @@
 #pages > div > a {
   color: blue;
 }
+#pages > div {
+  padding: 10px;
+  margin: 10px;
+}
+#pages > div > a {
+  text-decoration: none;
+  color: #75b6f6;
+}
+.selected {
+  background-color: gainsboro;
+  color: black;
+}
+#pages > .selected > a {
+  color: black;
+}
 
 #coupons {
   width: 70%;

@@ -1,78 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    body{
-        border: 0px solid red;
-        border-radius: 10px;
-        width: 42%;
-        height: 399px;
-        margin: auto;
-        padding: 10px;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        margin-top: 110px;
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-mail Login</title>
+  </head>
+  <style>
+    body {
+      border: 0px solid red;
+      border-radius: 10px;
+      width: 36%;
+      height: 399px;
+      margin: auto;
+      padding: 10px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      margin-top: 75px;
     }
-    h3{
-        color:grey;
-        font-size: 30px;
-        font-weight: 100;
+    h3 {
+      color: grey;
+      font-size: 25px;
+      font-weight: 100;
     }
-    h2{
-        color:grey;
-        
-        font-weight: 180; 
+    h2 {
+      color: grey;
+      font-size: 20px;
+      font-weight: 180;
+      margin-top: 25px;
     }
-    img{
-        margin-left: 100px;
+    img {
+      margin-left: 40px;
+      margin-bottom: -20px;
     }
-    #emailpart{
-       
-      
-        margin-left: 196px;
-    }
-    #bottom{
-        display: flex;
-        justify-content: space-between;
-    }
-    #login{
-     background-color: rgb(23, 226, 50);
-     color: aliceblue;
-     padding: 10px 48px;
-     border-radius: 5px;
-     text-transform: uppercase;
-    }
-    #facebook{
-        background-color: rgb(105, 71, 226);
-     color: aliceblue;
-     padding: 10px 48px;
-     border-radius: 5px;
-
+    #emailpart {
+      margin-left: 196px;
     }
 
-</style>
-<body>
-    
-    <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="emailimage">
-  
-       <center> <h3>Member Login</h3></center>
-        <div  id="emailpart">
-     <input type="text" placeholder="Your Email"><br><br>
-     <input type="text" placeholder="Your Password"><br>
-     <br>
+    #emailpart > input {
+      width: 100%;
+      margin-left: -110px;
+      padding: 5px 10px;
+    }
+
+    #bottom {
+      display: flex;
+      justify-content: space-between;
+    }
+    #login {
+      background-color: rgb(23, 226, 50);
+      border: none;
+      padding: 8px 10px;
+      border-radius: 5px;
+    }
+    #login > a {
+      background-color: rgb(23, 226, 50);
+      color: aliceblue;
+      padding: 8px 60px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none;
+    }
+    #facebook {
+      background-color: rgb(105, 71, 226);
+      color: aliceblue;
+      padding: 10px 48px;
+      border-radius: 5px;
+      cursor: pointer;
+      border: none;
+    }
+  </style>
+  <body>
+    <img
+      src="https://www.kindmeal.my/images/logo-kindmeal.png"
+      alt="emailimage"
+    />
+
+    <center><h3>Member Login</h3></center>
+    <div id="emailpart">
+      <input type="text" placeholder="Your Email" /><br /><br />
+      <input type="text" placeholder="Your Password" /><br />
+      <br />
     </div>
-    <center> <button id="login">Login</button></center>
-    <hr>
-    <center> <button id="facebook">Login with facebook</button></center>
-    
+    <center>
+      <button id="login"><a href="loggedInpage.html">Login</a></button>
+    </center>
+    <hr />
+    <center><button id="facebook">Login with facebook</button></center>
+
     <div id="bottom">
-        <h2>Forget Password?</h2>
-        <h2>Not a Member? Signup FREE!</h2>
+      <h2><a href="contactus.html"> Forget Password?</a></h2>
+      <h2><a href="signUpPage.html">Not a Member? Signup FREE!</a></h2>
     </div>
-</body>
+  </body>
 </html>

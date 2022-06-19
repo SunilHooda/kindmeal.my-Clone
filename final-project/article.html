@@ -226,10 +226,27 @@
         display: flex;
         justify-content: flex-start;
         margin-top: 20px;
-        margin-bottom: 5px;
       }
       #pages > div {
         width: 5%;
+      }
+      #pages > div > a {
+        color: blue;
+      }
+      #pages > div {
+        padding: 10px;
+        margin: 10px;
+      }
+      #pages > div > a {
+        text-decoration: none;
+        color: #75b6f6;
+      }
+      .selected {
+        background-color: gainsboro;
+        color: black;
+      }
+      #pages > .selected > a {
+        color: black;
       }
     </style>
   </head>
@@ -263,8 +280,8 @@
       <div>
         <p>Login</p>
         <button id="fbBtn">Facebook</button>
-        <button id="emailBtn">Email</button>
-        <p>Sign Up</p>
+        <button id="emailBtn"><a href="email.html">Email</a></button>
+        <p><a style="color: black" href="signUpPage.html">Sign Up</a></p>
       </div>
     </div>
     <div id="navbar2">
@@ -272,13 +289,12 @@
         <div>
           <span><a href="index.html">Home</a></span>
         </div>
-        <div>Meal Deals</div>
-        <div>KindMoments</div>
-        <div>Hot Picks</div>
-        <div>Recipe</div>
-        <div>Directory</div>
-        <div>Articles</div>
-        <div>Help</div>
+        <div><a href="mealDeals.html">Meal Deals</a></div>
+        <div><a href="kindmoments.html">KindMoments</a></div>
+        <div><a href="recipe1.html">Recipe</a></div>
+        <div><a href="directoryveg.html">Directory</a></div>
+        <div><a href="article.html">Articles</a></div>
+        <div><a href="helppage.html">Help</a></div>
       </div>
     </div>
 
@@ -302,8 +318,8 @@
     <div id="pages">
       <div>Page:</div>
       <div class="selected"><a href="article.html">1</a></div>
-      <div><a href="article1.html">2</a></div>
-      <div><a href="article2.html">3</a></div>
+      <div class="selected"><a href="article1.html">2</a></div>
+      <div class="selected"><a href="article2.html">3</a></div>
     </div>
 
     <div id="container">
@@ -561,21 +577,21 @@
       <div id="maincontainer">
         <div class="insidediv">
           <h4>General</h4>
-          <p><a href="">Home</a></p>
-          <p><a href="">Sign Up</a></p>
-          <p><a href="">Restaurateurs</a></p>
-          <p><a href="">AboutKindMeal.my</a></p>
-          <p><a href="">Help & FAQ</a></p>
-          <p><a href="">Contact Us</a></p>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="signUpPage.html">Sign Up</a></p>
+          <p><a href="featured.html">Restaurateurs</a></p>
+          <p><a href="index.html">AboutKindMeal.my</a></p>
+          <p><a href="helppage.html">Help & FAQ</a></p>
+          <p><a href="contactus.html">Contact Us</a></p>
         </div>
         <div class="insidediv">
           <h4>Features</h4>
-          <p><a href="">Meat-Free Deals</a></p>
-          <p><a href="">Tasty Menus</a></p>
-          <p><a href="">Kind Moments</a></p>
-          <p><a href="">Meat-Free Recipes</a></p>
-          <p><a href="">Featured Restaurants</a></p>
-          <p><a href="">Vegetarian & Vegan Directory</a></p>
+          <p><a href="meal_deals.html">Meat-Free Deals</a></p>
+          <p><a href="foodmenu.html">Tasty Menus</a></p>
+          <p><a href="kindmoments.html">Kind Moments</a></p>
+          <p><a href="recipe1.html">Meat-Free Recipes</a></p>
+          <p><a href="featured.html">Featured Restaurants</a></p>
+          <p><a href="directoryveg.html">Vegetarian & Vegan Directory</a></p>
         </div>
         <div class="insidediv">
           <h4>Social Media</h4>
