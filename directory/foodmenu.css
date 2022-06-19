@@ -58,6 +58,10 @@
 #pages > div {
   width: 5%;
 }
+
+#pages > div > a {
+  color: blue;
+}
 #coupons {
   width: 70%;
   height: auto;
