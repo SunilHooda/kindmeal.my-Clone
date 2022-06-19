@@ -89,6 +89,9 @@
 #pages > div {
   width: 5%;
 }
+#pages > div > a {
+  color: blue;
+}
 .cards {
   width: 70%;
   height: auto;
