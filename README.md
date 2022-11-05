@@ -16,7 +16,7 @@
     -Signup | Login 
     -Home Page displays trending discounts
     -User can search for restaurants in MealDeals Page and avail the coupon 
-    -User can experience the moments shared through people throught posts in the Kind Moments Page
+    -User can experience the moments shared through people through posts in the Kind Moments Page
     -In the Recipe Page, user can see the recipe videos shared by the people
     -User can search for restaurant location in the Directory Page
     -Article Page show the latest articles, news and videos
