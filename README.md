@@ -1,11 +1,6 @@
-# kindmeal.my-Clone
-Customers use our platform to search and discover restaurants, read and write customer generated reviews and view and upload photos, order food delivery, book a table and make payments while dining-out at restaurants.
+# KindMeal.my Clone
 
-# Intern-theory Clone
-
-<p> KindMeal is an online restaurant coupon service provider. User can search for restaurants all over the world and avail the coupon in this website. They can also search for restaurants 
-using its name, dish etc. They can read articles, read blogs, reviews, see recipe videos and search for restaurant location. To know more about the website, just click 
-on Help Page and the user can find all the details. We have cloned the KindMeal.my website as project of my construct week at** Masai School**. This website is made using Vanilla Javascript.</p>
+<p> KindMeal is an online restaurant coupon service provider. User can search for restaurants all over the world and avail the coupon in this website. They can also search for restaurants using its name, dish etc. They can read articles, read blogs, reviews, see recipe videos and search for restaurant location. To know more about the website, just click on Help Page and the user can find all the details. We have cloned the KindMeal.my website as project of my construct week at** Masai School**. This website is made using Vanilla Javascript.</p>
 
 # Netlify Link - <a href="https://kindmeal-unit-2-project.netlify.app/">KindMeal.my Clone</a>
 
@@ -13,7 +8,7 @@ on Help Page and the user can find all the details. We have cloned the KindMeal.
 
     Frontend: HTML, CSS, Vanilla JS, Bootstrap
     
-    Deployment: For Frontend - Netlify
+    Deployment: Netlify
                 
 
 # Features
