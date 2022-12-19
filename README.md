@@ -2,7 +2,9 @@
 
 <p> KindMeal is an online restaurant coupon service provider. User can search for restaurants all over the world and avail the coupon in this website. They can also search for restaurants using its name, dish etc. They can read articles, read blogs, reviews, see recipe videos and search for restaurant location. To know more about the website, just click on Help Page and the user can find all the details. We have cloned the KindMeal.my website as project of my construct week at** Masai School**. This website is made using Vanilla Javascript.</p>
 
-# Netlify Link - <a href="https://kindmeal-unit-2-project.netlify.app/">KindMeal.my Clone</a>
+### Netlify Link - <a href="https://kindmeal-unit-2-project.netlify.app/">KindMeal.my Clone</a>
+
+<img src="https://i.postimg.cc/XJ04nz5y/kindmeal.png" alt="homepage"/>
 
 # Technology
 
